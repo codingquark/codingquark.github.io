@@ -10,7 +10,7 @@ I'm <strong>Dhavan Vaidya</strong> - a Web Engineer by profession.
 
 I write code, making ideas become reality and problems disappear in the mists - while looking for one problem that would catch my attention for a lifetime.
 <h3>Work:</h3>
-I am currently working at <a href="http://alfanso.com" target="_blank">Alfanso</a> helping various clients build web apps based on various platforms - <a href="http://laravel.com/">Laravel</a>, <a href="https://angularjs.org" target="_blank">AngularJS</a>, <a href="https://www.meteor.com" target="_blank">MeteorJS</a> and we learn new things as and when it seems worthy.
+I am currently working at Oviyum (Hyderabad, India). It's one hell of an amazing place.
 <h3>Education:</h3>
 I graduated with Bioinformatics from <a href="http://www.nvpas.edu.in/" target="_blank">NVPAS</a>. I did post-graduation from <a href="http://cs.kutchuni.edu.in/" target="_blank">KSKVKU</a> with Information Technology.
 I like to learn on my own. I gather and consume relevant knowledge about Computing Science and Biotechnology from places such as Coursera, edX etc.

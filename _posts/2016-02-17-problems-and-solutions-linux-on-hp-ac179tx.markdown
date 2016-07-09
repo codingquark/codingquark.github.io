@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Problems and solutions while installing GNUS\Linux on HP AC179TX"
+title:  "Problems and solutions while installing GNU\\Linux on HP AC179TX"
 date:   2016-02-17 16:27:37 +0530
 categories: programming
 ---
