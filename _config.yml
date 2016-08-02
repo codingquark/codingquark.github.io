@@ -9,7 +9,7 @@
 title: Codingquark
 email: quark@codingquark.com
 description: > # this means to ignore newlines until "baseurl:"
-  My hacking adventures.
+  My hacking adventures
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://codingquark.com" # the base hostname & protocol for your site
 twitter_username: codingquark
