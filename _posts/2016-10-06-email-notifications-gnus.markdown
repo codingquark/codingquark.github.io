@@ -42,6 +42,24 @@ PS: Yes, I have 1533 unread mails. Don't panic.
 Good thing about gnus-notify+ is that it doesn't create *intrusive* notifications. There is one more entry in your modeline, you can keep an eye on it and decide to ignore it.
 You can modify GNUS-notify+ to notify you only about selected groups as well.
 
+*Edit*
+
+Our fellow emacsing wgreenhouse suggested some smart things!
+
+There's `display-time-mode` which shows time and can also check if there have been new files inserted under a directory. And this is done far faster because we are on local system. So, if GNUS checks for mails every 2 minutes, and we get notified via gnus-notify+ after 2 more minutes there is some delay.
+
+What we shall now do is that we will tell `display-time-mode` about one important directory where our emails arrive and we want to get notified immediately if GNUS has not received it yet but offlineimap knows about it. When GNUS reads the emails, notification from display-time-mode is removed.
+
+```elisp
+(display-time-mode) ;; turn the mode on
+(setq display-time-format "") ;; Hide the date, we have other clocks
+(setq display-time-mail-directory "~/Mail/Account/INBOX/new") ;; important directory
+(setq read-mail-command 'gnus) ;; when clicked (ewwww), open gnus
+(add-hook 'gnus-group-mode-hook 'display-time-event-handler) ;; force timer update when gnus receives the emails
+````
+
+Thanks to wgreenhouse, we now get notified for important emails timely.
+
 Next I would like to find out how to get these notifications to differentiate between accounts and groups. That is, something like `[GNUS: Office: 3, emacs: 50, Personal: 2]` or something on these lines.
 
 Got suggestions for improvements? Sure, please share over [Twitter](https://twitter.com/codingquark) or email.
