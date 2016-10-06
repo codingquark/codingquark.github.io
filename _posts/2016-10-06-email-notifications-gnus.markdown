@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Email notifications in GNUS"
-date:   2016-09-24 10:00:00 +0530
+date:   2016-10-06 20:00:00 +0530
 categories: life
 ---
 
