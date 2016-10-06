@@ -12,6 +12,8 @@ That means my setup has to change to do the following things:
 1. Check for incoming emails periodically.
 2. Generate notification if there is something new.
 
+These notifications *mustn't* be distracting because we get emails from vairous mailing lists and the number can be huge.
+
 Now, I [wrote](http://codingquark.com/emacs/2015/12/05/setting-up-gnus-in-emacs.html) about setting up GNUS a while ago and since then I've switched to [offlineimap](http://www.offlineimap.org/) + GNUS configuration.
 That means, I don't have to wait till GNUS checks for mails. Offlineimap keeps checking for emails from the server, and GNUS checks the local directories for the emails.
 
@@ -40,4 +42,6 @@ PS: Yes, I have 1533 unread mails. Don't panic.
 Good thing about gnus-notify+ is that it doesn't create *intrusive* notifications. There is one more entry in your modeline, you can keep an eye on it and decide to ignore it.
 You can modify GNUS-notify+ to notify you only about selected groups as well.
 
-Got suggestions for improvements? Sure, please over Twitter or email.
+Next I would like to find out how to get these notifications to differentiate between accounts and groups. That is, something like `[GNUS: Office: 3, emacs: 50, Personal: 2]` or something on these lines.
+
+Got suggestions for improvements? Sure, please share over [Twitter](https://twitter.com/codingquark) or email.
