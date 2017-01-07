@@ -25,4 +25,4 @@ Stay tuned.
 
 [Second part][1]
 
-[1]: /life/2016/10/15/digital-nomad-part-ii.html
+[1]: /life/2017/01/07/digital-nomad-part-ii.html
