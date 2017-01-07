@@ -22,3 +22,7 @@ Our team is organized in this way: 2 guys are working from their home; 4 are in 
 This is a quick update. This post will be followed by others in the series - how the plan execution is, how we are implementing the team management etc.
 
 Stay tuned.
+
+[Second part][1]
+
+[1]: /life/2016/10/15/digital-nomad-part-ii.html
