@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to read mathematics - Shai Simonson"
-date:   2017-04-15 00:00:00 +0530
+date:   2017-05-06 00:00:00 +0530
 categories: mathematics
 ---
 
