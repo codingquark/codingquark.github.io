@@ -53,3 +53,9 @@ brothers and sisters,
 and all watched over
 
 by machines of loving grace.
+
+---
+**Edit:**
+Written by [Richard Brautigan](https://en.wikipedia.org/wiki/Richard_Brautigan)
+
+[Link to Wiki Page](https://en.wikipedia.org/wiki/All_Watched_Over_by_Machines_of_Loving_Grace)
