@@ -17,4 +17,4 @@ The next interesting thing would be to note who all recognizes it from the famil
 
 [1]: https://en.wikipedia.org/wiki/Rangoli
 [2]: https://en.wikipedia.org/wiki/Dragon_curve
-[rangoli]: /images/rangoli_17_10_2017.jpg
+[rangoli]: /images/rangoli_18102017.jpg
