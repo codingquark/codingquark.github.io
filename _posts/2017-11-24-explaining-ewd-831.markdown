@@ -13,12 +13,16 @@ original text, nothing below will be graspable.
 Choices we have:
 
 a. 2 ≤ i < 13
+
 b. 1 < i ≤ 12
+
 c. 2 ≤ i ≤ 12
+
 d. 1 < i < 13
 
 EWD starts with two points, which might help us decide which one to
 use:
+
 1. The difference of bounds in *a* and *b* gives the length of the
    sequence.
 2. In *a* and *b*, for two adjacent subsequences, upper bound of one is
@@ -29,6 +33,7 @@ These are nice properties, but we are still not clear what to use.
 He then gives two more arguments:
 
 Let's assume [natural numbers][2] start at 0. Then,
+
 1. Exclusion of lower bound forces us to write -1 < i or -1 < i (only
    lower bounds written) for sequences that start at the smallest
    natural number.
