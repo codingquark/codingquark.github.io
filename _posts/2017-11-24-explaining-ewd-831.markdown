@@ -55,5 +55,21 @@ if we start at 0, we can write 0 ≤ i < N which is cleaner.
 
 And therefore, the numbering should start at 0.
 
+### For programmers
+
+For empty sets, the lower bound will have to be -1 if we use the
+convention of exclusive lower bounds i.e. -1 < i < 0.
+
+Issues with negative indices:
+
+1. We will need arithmetic for negative integers.
+2. Indices will consume more memory because of signed integers.
+3. The effort is only for the edge case of empty sets.
+
+As we can see, it is not only mathematically ugly, but
+programmatically ugly too.
+
+And therefore, the numbering should start at 0.
+
 [1]: https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html
 [2]: https://en.wikipedia.org/wiki/Natural_number
