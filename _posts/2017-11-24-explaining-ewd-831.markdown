@@ -53,7 +53,7 @@ We assume that convention of *a* is the one we are adhering to.
 If we start subscripts at 1, we will end up writing 1 ≤ i < N+1. But
 if we start at 0, we can write 0 ≤ i < N which is cleaner.
 
-And therefore, the number should start at 0.
+And therefore, the numbering should start at 0.
 
 [1]: https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html
 [2]: https://en.wikipedia.org/wiki/Natural_number
