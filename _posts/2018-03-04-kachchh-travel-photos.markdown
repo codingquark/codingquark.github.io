@@ -16,7 +16,7 @@ The hill:
 Local flora and fauna:
 <img src="/images/travels/makhana_hill/IMG_20180303_165227.jpg" />
 
-Catii (થોર), up close:
+Cacti (થોર), up close:
 <img src="/images/travels/makhana_hill/IMG_20180303_165237.jpg" />
 
 The side faced by the hill:
