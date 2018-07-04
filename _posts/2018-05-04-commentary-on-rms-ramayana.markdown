@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Commentary on RMS's post about Ramayana"
-date:   2018-07-01 23:00:00 +0530
+date:   2018-05-04 23:00:00 +0530
 categories: philosophy
 ---
 A few days ago, I came across RMS's [post][1] where he says that Ramayana endorses caste bias.
