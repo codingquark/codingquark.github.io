@@ -24,7 +24,7 @@ Lineage and Omni both are amazing ROMs. They give a lot of power to us - the use
 
 LineageOS is this sane, mature person who doesn't do any ridiculous thing (no signature spoofing, for example) and allows only _some_ customization out-of-box. Omni is more customizable version of Lineage. I do have some preferences over the two, but they are small enough to not be talked about right now.
 
-I use f-droid for all apps. (Give list of apps being used?) I have yalp installed for Slack. I have installed MicroG on OmniROM to get OsmAnd to work. Magisk gives root access whenever needed.
+I use f-droid for all apps. I have yalp installed for Slack. I have installed MicroG on OmniROM to get OsmAnd to work. Magisk gives root access whenever needed.
 <br /><br />
 ### Pros
 I will not talk about how FLOSS is great and therefore all the apps I use are also great. That is implied.
