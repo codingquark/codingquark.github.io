@@ -31,10 +31,12 @@ you will appreciate the past! pain is all about learning!
 <br />
 codingquark [16:55] <br />
 The wrenching heart <br />
-The befalling painYou take consolation <br />
+The befalling pain <br /> <br />
+You take consolation <br />
 In learning <br />
 In memories <br />
-In coming throughHeart is a Desert of Thorns <br />
+In coming through <br /> <br />
+Heart is a Desert of Thorns <br />
 And the Thorns do not console.
 
 <br />
@@ -49,7 +51,8 @@ The scars and the times
 codingquark [16:58] <br />
 The visions of a switch sending packets <br />
 The visions of blinking lights <br />
-The visions of streams of dataOh how I had wished to bathe in the signals of wireless fidelity
+The visions of streams of data <br /> <br />
+Oh how I had wished to bathe in the signals of wireless fidelity
 
 <br />
 bhk [17:00] <br />
@@ -74,7 +77,9 @@ Paths filled with the shrills and cries of modems. <br />
 codingquark [17:11] <br />
 It takes a beast to enable communications! <br />
 The green fiery eyes of the beast must be kept blinking <br />
-The true eye must be kept from becoming redMany horns of the beast are the key to long range <br />
-Many cores of the beast's brain are the key to support many usersThe beast must be kept calm and cool, venting heatThe beast has a mood <br />
+The true eye must be kept from becoming red <br /> <br />
+Many horns of the beast are the key to long range <br />
+Many cores of the beast's brain are the key to support many users <br />
+The beast must be kept calm and cool, venting heatThe beast has a mood <br /> <br />
 When in a bad mood, it disrupts all moods <br />
 And the world goes silent. (edited)
