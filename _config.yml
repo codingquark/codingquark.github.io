@@ -19,3 +19,7 @@ mastodon_profile: https://mathstodon.xyz/@codingquark
 
 # Build settings
 markdown: kramdown
+
+# Feed settings
+plugins:
+  - jekyll-feed
