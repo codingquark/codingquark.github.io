@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "EmacsConf 2019 - Distributed!"
+date:   2019-11-05 06:00:00 +0530
+category: emacs
+tags:
+- emacs
+- conferences
+---
+After 3 years of inactivity, motivated emacs hackers decided that it is time to revive [the conference][5]. And this time such that everyone could participate!
+
+[Jitsi][1] was used to stream the talks, [IRC][2] was used to chat real-time and [chaospad][3] to share the notes. Thus, the entire conference was organised using [libre software][4] exclusively. Quite a thing!
+
+This distributed approach had its positives and negatives. I would like to talk about both. Being online, it opens the doors to anyone who wants to participate. No physical and economical barriers. This also helps diversity. People from a vast background and knowledge can easily feel at home. It also allows for better moderation on how participants want to spend their time during the breaks & during talks they do not want to attend, not to mention administrative control.
+
+With all these and more benefits, there are disadvantages. Our tech is not yet advanced enough that we can replace physical presence. This means you don't actually feel like you've "met" anyone. Since nobody is actually "present", it is easy to get distracted or take up parallel work. Let's be honest, we don't get to visit new places and have fun. The advantages and disadvantages - strike a balance for yourself.
+
+During the conference, it was great fun to talk to people as the speaker was streaming over jitsi. So many people chime-in real time at various points! Speakers may or may not choose to follow IRC during the talk as well. Now, it can distracting to follow running discussions and talks at the same time, but it surely adds to the fun. I ended up `/ignore`ing a couple of accounts, but overall it was very nice.
+
+As all software goes, jitsi kept bugging out. Organizers had to work extra hard to ease things out. One of the best moves in hindsight was to have prerecorded talks. If the speaker could not get their setup to work, organizers could simply stream the recorded talks. During the times when audience is waiting for jitsi to stop being ~~a bitc~~ crazy, lightening talks were streamed. This allowed people to stay engaged. IRC - as always - was flawless.
+
+What can we do to improve the conference for the next year? Fix jitsi. Seriously. Then, have more satellite conferences so that people can gather locally. Volunteer for the team - never enough of those, eh? Although IRC was not too noisy, there were times when too many separate active discussions started taking place. Perhaps we can do something about that. We also need to find some way so that well-known public speakers don't have to think twice before participating in online distributed conferences.
+
+Lastly, thanks a lot to the organizers for their amazing work and the civil participants for making it a success. The speakers were fantastic, open to discussions & QA and patient. Thanks a ton!
+
+See you next year!
+
+[1]:https://jitsi.org/
+[2]:http://www.irc.org/
+[3]:https://pads.ccc.de/
+[4]:https://en.wikipedia.org/wiki/Free_software
+[5]:https://emacsconf.org/2019/
