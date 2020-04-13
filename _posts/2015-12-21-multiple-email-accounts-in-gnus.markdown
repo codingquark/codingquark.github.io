@@ -4,7 +4,7 @@ title:  "Multiple email accounts in GNUS"
 date:   2015-12-21 16:27:37 +0530
 categories: emacs
 ---
-<a href="http://codingquark.com/setting-up-gnus-in-emacs/" target="_blank">Last time</a> we talked about a really easy way to setup GNUS (yea, like, really really easy) for email access. It's time to get more out of it!
+[Last time][1] we talked about a really easy way to setup GNUS (yea, like, really really easy) for email access. It's time to get more out of it!
 
 This time, we will enable multiple email accounts for receiving and sending email from GNUS. And it works, <em>for sure</em>.
 
@@ -80,3 +80,6 @@ I might now setup another layer such that my emails are downloaded locally from 
 I have also managed to setup EasyPG with gnus which is really easy. Read about it <a href="http://www.emacswiki.org/emacs/EasyPG" target="_blank">here</a>.
 
 Hope you have enjoyed so far. See you next time!
+
+
+[1]: /emacs/2015/12/05/setting-up-gnus-in-emacs.html
