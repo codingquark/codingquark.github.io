@@ -3,9 +3,7 @@ layout: post
 title:  "EmacsConf 2019 - Distributed!"
 date:   2019-11-05 06:00:00 +0530
 category: emacs
-tags:
-- emacs
-- conferences
+tags: [emacs, conferences]
 ---
 After 3 years of inactivity, motivated emacs hackers decided that it is time to revive [the conference][5]. And this time such that everyone could participate!
 

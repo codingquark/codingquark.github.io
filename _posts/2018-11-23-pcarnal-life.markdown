@@ -3,8 +3,7 @@ layout: post
 title:  "Carnal Life"
 date:   2018-11-23 06:00:00 +0530
 category: poetry
-tags:
-- poem
+tags: [poem]
 ---
 A teabag,
 

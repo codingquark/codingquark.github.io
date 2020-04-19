@@ -3,10 +3,7 @@ layout: post
 title:  "Creative brain - with, without and beyond coffee"
 date:   2018-09-01 06:00:00 +0530
 category: philosophy
-tags:
-- coffee
-- creativity
-- experiments
+tags: [coffee, creativity, experiments]
 ---
 
 Our brains function at high efficiency and more creativity on [caffeine](https://en.wikipedia.org/wiki/Caffeine "Wikipedia linkm"). Then it becomes an addiction, at which point, to get high efficiency we need more caffeine. I have tried various things on this subject, and here are my thoughts so far.
