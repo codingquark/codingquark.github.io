@@ -11,11 +11,12 @@ email: quark@codingquark.com
 description: > # this means to ignore newlines until "baseurl:"
   My hacking adventures
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://codingquark.com" # the base hostname & protocol for your site
+url: "https://codingquark.com" # the base hostname & protocol for your site
 github_username:  codingquark
 twitter_username: codingquark
 mastodon_username: codingquark
 mastodon_profile: https://mathstodon.xyz/@codingquark
+git_repository_path: https://github.com/codingquark/codingquark.github.io/tree/master
 
 # Build settings
 markdown: kramdown
