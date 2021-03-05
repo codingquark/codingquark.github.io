@@ -4,6 +4,7 @@ title: "An account of effects observed on self of L-theanine and Caffeine"
 date: 2020-10-14 06:00:00 +0530
 category: productivity
 tags: [coffee, experiments]
+comments: true
 ---
 Some time ago, a friend discussed his readings on [Nootropic][1]. He came to believe that perhaps there are ways to safely increase cognitive capacities of us humans without much harm. I got interested and asked him to give me a very simple starting point. The point I was given was 200mg [L-theanine][2] + 100mg caffeine tablets.
 
