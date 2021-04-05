@@ -43,3 +43,7 @@ Theory of attention residue says that it takes approximately 20min to switch con
 Given these two observations, we can derive the fact that long sessions of undistracted practice are needed to acquire new skills.
 
 A common counterargument to deep work is that people like Jack Dorsey do virtually no deep work yet they are very successful. The author agrees and says this book is not needed for people in such high executive positions, where their role is that of a decision machine. At the same time, he advises not to be too hasty in declaring your job to be like Jack and think deeply before concluding such a thing.
+
+Follow up: [Deep Work Summary Part 2 (Deep Work Is Rare)][1]
+
+[1]: /productivity/2021/04/05/deep-work-summary-ch-2.html
