@@ -3,6 +3,7 @@ layout: post
 title:  "Atreus - first impressions"
 date:   2016-05-08 16:27:37 +0530
 categories: keyboards
+comments: true
 ---
 It has been around 4 months since I built my <a href="http://codingquark.com/atreus-build-log/" target="_blank">Atreus</a>. I have been using it ever since on permanent basis. I think it is a fair time to write about how I feel with the keyboard.
 

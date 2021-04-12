@@ -3,6 +3,7 @@ layout: post
 title:  "Digital Nomad Part II - Team Management"
 date:   2017-01-07 12:00:00 +0530
 categories: life
+comments: true
 ---
 
 *PS: The post got delayed by 2 months. I had a lot of work. So keep in mind things have changed a lot.*

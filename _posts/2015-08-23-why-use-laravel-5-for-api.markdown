@@ -3,6 +3,7 @@ layout: post
 title:  "Using Laravel for API"
 date:   2015-06-23 16:27:37 +0530
 categories: programming
+comments: true
 ---
 For quite a few projects now, I have been implementing API in Laravel 5. I did no programming for UI. I found that Laravel 5 is <em>made</em> for API implementation.
 

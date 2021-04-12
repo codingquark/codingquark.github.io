@@ -3,6 +3,7 @@ layout: post
 title:  "A Critique of અણવર tradition"
 date:   2018-07-01 10:00:00 +0530
 categories: philosophy
+comments: true
 ---
 Last weekend, I attended engagement ceremony of a very close friend of mine (Congratulations once again!). It was modernized traditional setting, if that makes sense. What I mean is that the rituals were kind of traditional, but adapted to fit the different standards the society has evolved over time.
 

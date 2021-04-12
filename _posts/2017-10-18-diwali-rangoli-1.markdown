@@ -3,6 +3,7 @@ layout: post
 title:  "Musings with Rangoli - 1"
 date:   2017-10-17 00:00:01 +0530
 categories: mathematics
+comments: true
 ---
 
 It is the time of Diwali, and that means I get to draw and color [rangoli][1].

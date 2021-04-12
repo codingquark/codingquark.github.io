@@ -4,6 +4,7 @@ title:  "YouTube Subscriptions in Emacs with elfeed"
 date:   2019-05-16 06:00:00 +0530
 category: emacs
 tags: [emacs, youtube]
+comments: true
 ---
 
 ### Goal

@@ -3,6 +3,7 @@ layout: post
 title:  "Privacy: Evolutionary Basis"
 date:   2017-05-14 00:00:00 +0530
 categories: biology
+comments: true
 ---
 It is indeed natural for me to evaluate privacy as an evolved feature. After all, why do humans need privacy? How did it evolve in its current form? Is it still needed? These questions required scientific inquiry. I have talked about the topic with many people over the years. Most common feature of the interaction has been "I don't want certain things I do to be known by anyone, they're too personal". I have not been able to understand these "personal things" properly to be honest. So I would speak if those aspects are objectively valid to be kept private. And most of the times, they were not. This time, I decided I'll look at all the studies conducted and see the core reason behind the concept.
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Photographs - Beauty of Kachchh - The Climb"
 date:   2018-03-13 00:00:00 +0530
 categories: travel
+comments: true
 ---
 
 **This time, I'm trying out mediagoblin! Enjoy the scenery! Link to the photographs: [click here][2]**

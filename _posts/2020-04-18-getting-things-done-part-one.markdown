@@ -4,6 +4,7 @@ title: "Backstory: State of Personal Knowledge & Projects"
 date: 2020-04-18 06:00:00 +0530
 category: gtd
 tags: [gtd, emacs]
+comments: true
 ---
 I need to Get Things Done, just like everybody else does! Many things happen in life - personal commitments, projects, goals, wishes; professional projects, ideas, plans. That is the story of (almost) everyone's life. This is a story and analysis of how I have been approaching it on and off in last, what, a decade.
 

@@ -4,6 +4,7 @@ title:  "Going FLOSS-only on Android"
 date:   2018-07-04 06:00:00 +0530
 category: floss
 tags: [android, floss]
+comments: true
 ---
 
 Someone recently asked me how my experience has been with a couple of ROMs I have tried on my Android phone. Which reminded me that I need to write a post detailing my ups and downs during the journey.

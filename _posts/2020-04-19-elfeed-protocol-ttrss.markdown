@@ -4,6 +4,7 @@ title: "Elfeed with Tiny Tiny RSS"
 date: 2020-04-19 06:00:00 +0530
 category: emacs
 tags: [elfeed, emacs, rss]
+comments: true
 ---
 If you have multiple computers and you subscribe to [RSS feeds][2] - which you probably do, it would be great if you could read the feeds from all your computers and have the feeds' read state synchronized.
 

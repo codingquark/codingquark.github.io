@@ -3,6 +3,7 @@ layout: post
 title:  "Biology - A reverse engineering perspective"
 date:   2015-06-23 16:27:37 +0530
 categories: biology
+comments: true
 ---
 A few days ago, I was trying to make myself fall asleep because I read a post about <a href="http://aeon.co/magazine/psychology/why-broken-sleep-is-a-golden-time-for-creativity/">Broken Sleep</a> and was trying to implement it. I was supposed to wake up early in the morning and read/think on a few topics that interests me. However, I had already taken a lot of sleep during the weekend and was having hard time sleeping. <!--more-->While I was trying to (rather waiting for) sleep, I had this thought. I could see Biology – especially genetics – as a reverse engineering process. I haven’t read anything about this perspective. May be (with high probability) it has already been seen in this perspective, people might already have written a lot about Biology as a reverse engineering process. But I’m now going to write my own thoughts as to why I came to think this way. I'm not going to read other papers/posts etc. on this subject, I'll just focus on what and why I think Biology is a reverse engineering process.
 

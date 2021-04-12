@@ -3,6 +3,7 @@ layout: post
 title:  "Current Linux Workflow"
 date:   2016-07-30 00:00:00 +0530
 categories: linux
+comments: true
 ---
 Some months ago, I got a new [computer][1] and setup Archlinux on it. I also got a [mechanical keyboard][6]. Since then I've been modifying and optmizing my workflow.
 

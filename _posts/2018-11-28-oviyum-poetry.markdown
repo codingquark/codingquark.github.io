@@ -4,6 +4,7 @@ title:  "A few minutes at Oviyum"
 date:   2018-11-28 06:00:00 +0530
 category: poetry
 tags: [poem]
+comments: true
 ---
 
 The following is excerpt of chat we had in our Slack channel where I work. Enjoy!

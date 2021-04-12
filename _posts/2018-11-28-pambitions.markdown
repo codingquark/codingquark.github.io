@@ -4,6 +4,7 @@ title:  "Ambitions"
 date:   2018-12-05 06:00:00 +0530
 category: poetry
 tags: [poem]
+comments: true
 ---
 ![car][dust_car] <br /> <br />
 leathery caress of wheels <br />

@@ -3,6 +3,7 @@ layout: post
 title:  "Photographs - Beauty of Kachchh"
 date:   2018-03-04 00:00:00 +0530
 categories: travel
+comments: true
 ---
 The hill is of interest because it is long, tall and almost flat. Visible from afar - at least from Bhuj, which is ~20km away by road (not straight line).
 

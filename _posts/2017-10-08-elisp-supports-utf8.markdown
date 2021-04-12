@@ -3,6 +3,7 @@ layout: post
 title:  "TIL - Elisp supports UTF8"
 date:   2017-10-08 00:00:01 +0530
 categories: emacs
+comments: true
 ---
 
 Today I learned that I can program in *any* language I want if I use Elisp!

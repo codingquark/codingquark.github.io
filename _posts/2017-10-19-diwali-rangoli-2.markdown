@@ -3,6 +3,7 @@ layout: post
 title:  "Musings with Rangoli - 2"
 date:   2017-10-19 00:00:01
 categories: mathematics
+comments: true
 ---
 
 This is the second entry in the series of [rangoli][1] musings. The plans was to make 3 rangolis over 3 days, but I did not get time to third one. However, on the day of Diwali, I managed to do something.

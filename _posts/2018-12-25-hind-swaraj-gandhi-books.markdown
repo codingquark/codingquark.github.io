@@ -4,6 +4,7 @@ title:  "Gandhi's Book Recommendations (in Hind Swaraj)"
 date:   2018-12-25 06:00:00 +0530
 category: books
 tags: [books]
+comments: true
 ---
 In the book [Hind Swaraj][1] [M. K. Gandhi][2] recommends the following books:
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Multiple email accounts in GNUS"
 date:   2015-12-21 16:27:37 +0530
 categories: emacs
+comments: true
 ---
 [Last time][1] we talked about a really easy way to setup GNUS (yea, like, really really easy) for email access. It's time to get more out of it!
 

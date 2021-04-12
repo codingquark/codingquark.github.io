@@ -3,6 +3,7 @@ layout: post
 title:  "Problems and solutions while installing GNU\\Linux on HP AC179TX"
 date:   2016-02-17 16:27:37 +0530
 categories: programming
+comments: true
 ---
 I recently bought<a href="http://support.hp.com/my-en/document/c04919819"> HP AC179TX</a> with a few modifications (such as SSD, 8GB RAM) to replace my old laptop.
 

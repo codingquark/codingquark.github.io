@@ -3,6 +3,7 @@ layout: post
 title:  "An Inquiry in the Nature of Debt: Beginnings"
 date:   2017-01-22 10:00:00 +0530
 categories: economics
+comments: true
 ---
 
 I am a total newb - almost a blank slate - when it comes to the mechanics of our Economy. I might know some basic things so that day-to-day interactions are possible, but beyond that, I don't understand it.

@@ -3,6 +3,7 @@ layout: post
 title:  "Atreus build log"
 date:   2016-02-21 16:27:37 +0530
 categories: keyboards
+comments: true
 ---
 Disclaimer: this post features a lot of images. My soldering skills are poor.
 

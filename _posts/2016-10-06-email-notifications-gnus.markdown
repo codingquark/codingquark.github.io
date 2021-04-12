@@ -3,6 +3,7 @@ layout: post
 title:  "Email notifications in GNUS"
 date:   2016-10-06 20:00:00 +0530
 categories: life
+comments: true
 ---
 
 I use [GNUS](http://gnus.org/) for my emails. I read/write emails from GNUS. It works and all, but now I need to know when an email arrives.

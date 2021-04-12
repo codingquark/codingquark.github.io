@@ -3,6 +3,7 @@ layout: post
 title:  "Setting up GNUS in Emacs"
 date:   2015-12-05 16:27:37 +0530
 categories: emacs
+comments: true
 ---
 This week, I decided that I want to setup <a href="http://gnus.org/" target="_blank">gnus</a> at any cost. It must be able to fetch news from some news server and send/receive emails from my personal domain.
 

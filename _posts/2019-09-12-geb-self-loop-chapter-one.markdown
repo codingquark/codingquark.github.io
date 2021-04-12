@@ -4,6 +4,7 @@ title:  "GEB: A hidden gem in chapter 1 of the book"
 date:   2019-09-12 06:00:00 +0530
 category: books
 tags: [books, mathematics]
+comments: true
 ---
 [GEB][1] is a book, author says, about the ideas relating to and about "Strange Loops". Yet, the book is not about Strange Loops only. It examines how self referencing structures are an integral part of our reality, proposing they're at the core of consciousness.
 

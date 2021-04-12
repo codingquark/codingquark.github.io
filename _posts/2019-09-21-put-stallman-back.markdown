@@ -4,6 +4,7 @@ title:  "Put Stallman Back"
 date:   2019-09-21 06:00:00 +0530
 category: activism
 tags: [freesoftware, programming, freespeech, lynchmob]
+comments: true
 ---
 
 [RMS][1] had to resign from MIT and [FSF][2], because of "[Remove Richard Stallman][3]". Read the post before you read any further.

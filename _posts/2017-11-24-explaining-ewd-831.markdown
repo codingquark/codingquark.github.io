@@ -3,6 +3,7 @@ layout: post
 title:  "Explanation of EWD831"
 date:   2017-11-24 00:00:01
 categories: mathematics
+comments: true
 ---
 
 Here is the original [EWD831][1].

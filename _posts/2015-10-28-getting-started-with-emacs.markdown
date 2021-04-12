@@ -3,6 +3,7 @@ layout: post
 title:  "Getting started with Emacs"
 date:   2015-10-28 16:27:37 +0530
 categories: emacs
+comments: true
 ---
 Thinking about beginning your journey with emacs? Awesome! You're in for a great time.
 

@@ -4,6 +4,7 @@ title: "Gitlab Runner Fails to Start Docker Machines if Log Level is Set to Debu
 date: 2020-04-24 06:00:00 +0530
 category: devops
 tags: [gitlab, bugs, devops, cicd]
+comments: true
 ---
 The other day, I was setting up Gitlab Runner to autoscale on AWS to run our CI/CD pipelines. The setup was going to be thus:
 

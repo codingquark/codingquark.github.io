@@ -4,6 +4,7 @@ title: "Deep Work Summary Part 2 (Deep Work Is Rare)"
 date: 2021-04-05 18:00:00 +0530
 category: productivity
 tags: [books]
+comments: true
 ---
 # Deep Work Is Rare
 

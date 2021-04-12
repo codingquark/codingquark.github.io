@@ -3,6 +3,7 @@ layout: post
 title:  "Experimenting with Digital Detox for 30 days"
 date:   2019-11-07 06:00:00 +0530
 category: life
+comments: true
 ---
 Since 1<sup>st</sup> of October I have not used any computer, screen or gadget in my bedroom. Except a pen and some papers, everything has been kept out.
 

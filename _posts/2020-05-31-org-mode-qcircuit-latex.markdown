@@ -4,6 +4,7 @@ title: "Using qcircuit in org-mode"
 date: 2020-05-31 06:00:00 +0530
 category: emacs
 tags: [emacs, orgmode, latex]
+comments: true
 ---
 [qcircuit][1] is how you insert quantum circuits in $$\LaTeX$$.
 

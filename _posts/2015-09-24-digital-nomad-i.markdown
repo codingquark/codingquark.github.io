@@ -3,6 +3,7 @@ layout: post
 title:  "Digital Nomad Part I"
 date:   2016-09-24 10:00:00 +0530
 categories: life
+comments: true
 ---
 
 Today, I am leaving Hyderabad and going to Bhuj for *undefined legth of time*. My current job is permissive enough to let me take such a step. And this step brings many challenges.

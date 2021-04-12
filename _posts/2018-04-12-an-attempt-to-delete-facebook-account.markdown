@@ -3,6 +3,7 @@ layout: post
 title:  "An attempt to delete Facebook account"
 date:   2018-04-12 00:00:00 +0530
 categories: misc
+comments: true
 ---
 I have wanted to delete my facebook account for last 2-3 years. But I have been failing to do that (I will show reasons soon), and had decided to simply ignore facebook forever. I recently noticed that unless I remove my account, I will be subject to their new policies. I will _have_ to login to the account and take action on the policy updates.
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Weekly update - An Inquiry in the Nature of Debt"
 date:   2017-01-29 10:00:00 +0530
 categories: economics
+comments: true
 ---
 
 It has been 7 days since I started the work on the subject. Let's see what I've been up to.

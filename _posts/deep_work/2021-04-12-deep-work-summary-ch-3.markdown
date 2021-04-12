@@ -4,6 +4,7 @@ title: "Deep Work Summary Part 3 (Deep Work Is Meaningful)"
 date: 2021-04-12 08:00:00 +0530
 category: productivity
 tags: [books]
+comments: true
 ---
 Craftsmen such as ironsmiths value their work deeply. When a swordsmith looks at the hot iron, or at the finished Katana, the look in the eyes tells a deep story. Cal argues that the same level of deep satisfaction is possible not just in the crafts economy, but also in the information economy.
 

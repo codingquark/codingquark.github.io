@@ -3,6 +3,7 @@ layout: post
 title:  "Why I dislike Audiobooks"
 date:   2015-06-28 16:27:37 +0530
 categories: books
+comments: true
 ---
 Let me say it loud and clear: I <em>dislike</em> audio books.
 

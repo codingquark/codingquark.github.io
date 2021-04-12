@@ -4,6 +4,7 @@ title: "Deep Work Summary Part 1 (Introduction & Chapter 1)"
 date: 2021-03-29 18:00:00 +0530
 category: productivity
 tags: [books]
+comments: true
 ---
 # tl;dr
 

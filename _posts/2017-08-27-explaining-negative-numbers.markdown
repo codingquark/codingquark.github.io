@@ -3,6 +3,7 @@ layout: post
 title:  "Trying to understand negative numbers"
 date:   2017-08-27 00:00:00 +0530
 categories: mathematics
+comments: true
 ---
 I wanted to understand complex numbers $$\mathbb{C}$$. I was told, that $$i$$ is
 the value of $$\sqrt{-1}$$. I understood why I cannot calculate the root of a
