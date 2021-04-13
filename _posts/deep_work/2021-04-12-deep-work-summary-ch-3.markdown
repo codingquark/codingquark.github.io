@@ -24,3 +24,7 @@ Analogous to sayings such as “each piece of wood is distinct and therefore has
 It has also been shown by Hubert Dreyfus and others that after Enlightenment, general feeling of happiness and fulfilment decreased. This, they argued is because, in an earlier era, the world was made of sacred and shiny things in people’s minds which was then removed by the Enlightenment era. Though this change brought freedom to slaves and many other improvements, it is also making lives hard to live.
 
 Thus, deep work is essential to extract meaning and happiness out of life.
+
+Previous issue: [Deep Work Summary Part 2 (Deep Work Is Rare)][1]
+
+[1]: /productivity/2021/04/05/deep-work-summary-ch-2.html

@@ -24,4 +24,6 @@ There is a cult of Internet people who say it is the source of wisdom and everyo
 
 If the narrative presented above is true, it is good for you because deep work is getting rarer and at the same time, more valuable.
 
-[1]: /productivity/2021/03/29/deep-work-summary-intro.html
+Follow up: [Deep Work Summary Part 3 (Deep Work Is Meaningful)][1]
+
+[1]: /productivity/2021/04/12/deep-work-summary-ch-3.html
