@@ -27,4 +27,7 @@ Thus, deep work is essential to extract meaning and happiness out of life.
 
 Previous issue: [Deep Work Summary Part 2 (Deep Work Is Rare)][1]
 
+Follow up: [Deep Work Summary Part 4 (Rule #1: Work Deeply)][2]
+
 [1]: /productivity/2021/04/05/deep-work-summary-ch-2.html
+[2]: /productivity/2021/04/19/deep-work-summary-ch-4.html
