@@ -106,4 +106,7 @@ To succeed at these strategies, you need to learn to call it a day and come to t
 
 Previous issue: [Deep Work Summary Part 3 (Deep Work Is Meaningful)][1]
 
+Follow up: [Deep Work Summary Part 5 (Embrace Boredom, Quit Social Media)][2]
+
 [1]: /productivity/2021/04/12/deep-work-summary-ch-3.html
+[2]: /productivity/2021/04/24/deep-work-summary-ch-5.html
