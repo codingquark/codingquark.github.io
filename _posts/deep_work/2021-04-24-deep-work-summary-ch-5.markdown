@@ -38,5 +38,8 @@ Applying the strategy of minimalism will help you decide which network tools are
 
 Previous issue: [Deep Work Summary Part 4 (Rule #1: Work Deeply)][1]
 
+Next issue: [Deep Work Summary Part 6 (Rule #4: Drain the Shallows)][3]
+
 [1]: /productivity/2021/04/19/deep-work-summary-ch-4.html
 [2]: /productivity/2021/03/29/deep-work-summary-intro.html
+[3]: /productivity/2021/05/03/deep-work-summary-ch-6.html
