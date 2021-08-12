@@ -24,3 +24,7 @@ markdown: kramdown
 # Feed settings
 plugins:
   - jekyll-feed
+
+assets:
+   sources:
+       -assets/fonts
