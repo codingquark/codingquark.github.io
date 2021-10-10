@@ -27,4 +27,4 @@ plugins:
 
 assets:
    sources:
-       -assets/fonts
+       - assets/fonts
