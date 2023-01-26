@@ -9,3 +9,11 @@ comments: false
 Instead of using R, I am going to use Mathematica. Below is a Wolfram Notebook, where I explore Chapter 4 and do some exercises. Enjoy!
 
 Link: [Notebook on notebookarchive.org](https://notebookarchive.org/basic-statistics-exploration-from-doing-bayesian-data-analysis--2023-01-8u3op2k/)
+
+<script crossorigin src="https://unpkg.com/wolfram-notebook-embedder@0.3/dist/wolfram-notebook-embedder.min.js"></script>
+
+<div id="notebookContainer"></div>
+
+<script>
+var embedding = WolframNotebookEmbedder.embed('https://www.wolframcloud.com/objects/nbarch/2023/01/2023-01-8u3op2k/2023-01-8u3op2k.nb', document.getElementById('notebookContainer'));
+</script>
