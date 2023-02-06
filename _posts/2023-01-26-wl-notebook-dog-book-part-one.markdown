@@ -12,4 +12,4 @@ Link: [Notebook on notebookarchive.org](https://notebookarchive.org/basic-statis
 
 Download link: [Download]({{ site_url }}/assets/wl_notebooks/ch_4.nb)
 
-<iframe src="{% post_url 2023-02-01-wl-notebook-dog-book-part-one-notebook-exclude %}" width="100%" height="600"></iframe>
+<iframe src="{% post_url 2023-01-26-wl-notebook-dog-book-part-one-notebook-exclude %}" width="100%" height="600"></iframe>
