@@ -1,0 +1,9479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+ "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      ch_4 notebook-exclude
+    </title>
+    <link href="/assets/css/mathematica/dog_book/ch_4.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body style="font-size: Floor[125. Inherited]%;">
+    <p class="Title">
+      Initial Exploration
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>RandomInteger</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mtext> </mtext>
+	    <mn>20</mn>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mo>{</mo>
+	  <mrow>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	  </mrow>
+	  <mo>}</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>RandomVariate</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>UniformDistribution</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>0.6531459162175581</mn>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Count</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>RandomInteger</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mo>{</mo>
+		  <mrow>
+		    <mn>0</mn>
+		    <mo>,</mo>
+		    <mn>1</mn>
+		  </mrow>
+		  <mo>}</mo>
+		</mrow>
+		<mo>,</mo>
+		<mtext> </mtext>
+		<mn>20</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mtext> </mtext>
+	    <mn>0</mn>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>8</mn>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>ListLinePlot</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>Table</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Accumulate</mi>
+		  <mo>[</mo>
+		  <mrow>
+		    <mi>RandomReal</mi>
+		    <mo>[</mo>
+		    <mrow>
+		      <mrow>
+			<mo>{</mo>
+			<mrow>
+			  <mrow>
+			    <mo>-</mo>
+			    <mn>1</mn>
+			  </mrow>
+			  <mo>,</mo>
+			  <mn>1</mn>
+			</mrow>
+			<mo>}</mo>
+		      </mrow>
+		      <mo>,</mo>
+		      <mn>250</mn>
+		    </mrow>
+		    <mo>]</mo>
+		  </mrow>
+		  <mo>]</mo>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mo>{</mo>
+		  <mn>3</mn>
+		  <mo>}</mo>
+		</mrow>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Filling</mi>
+	      <mo>&rightarrow;</mo>
+	      <mi>Axis</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>PlotLegends</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mrow>
+		  <ms>one</ms>
+		  <mo>,</mo>
+		  <ms>two</ms>
+		  <mo>,</mo>
+		  <ms>three</ms>
+		</mrow>
+		<mo>}</mo>
+	      </mrow>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_1.gif" alt="ch_4_1.gif" width="539" height="273" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Accumulate</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>RandomInteger</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mrow>
+		<mo>{</mo>
+		<mrow>
+		  <mn>0</mn>
+		  <mo>,</mo>
+		  <mn>1</mn>
+		</mrow>
+		<mo>}</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mtext> </mtext>
+	      <mn>10</mn>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mo>{</mo>
+	  <mrow>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>2</mn>
+	    <mo>,</mo>
+	    <mn>2</mn>
+	    <mo>,</mo>
+	    <mn>3</mn>
+	    <mo>,</mo>
+	    <mn>4</mn>
+	    <mo>,</mo>
+	    <mn>5</mn>
+	    <mo>,</mo>
+	    <mn>5</mn>
+	    <mo>,</mo>
+	    <mn>6</mn>
+	    <mo>,</mo>
+	    <mn>7</mn>
+	  </mrow>
+	  <mo>}</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>ListLinePlot</mi>
+	  <mo>[</mo>
+	  <mi>%</mi>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_2.gif" alt="ch_4_2.gif" width="450" height="291" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Table</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>RandomInteger</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mo>{</mo>
+		  <mrow>
+		    <mn>0</mn>
+		    <mo>,</mo>
+		    <mn>1</mn>
+		  </mrow>
+		  <mo>}</mo>
+		</mrow>
+		<mo>,</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mn>10</mn>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Message">
+      <img src="/assets/images/mathematica/dog_book/ch_4_3.gif" alt="ch_4_3.gif" width="567" height="25" style="vertical-align:middle;" usemap="#map_3" />
+      <map name="map_3">
+	<area shape="rect" coords="0,24,23,1" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+      </map>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>MovingAverage</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mo>{</mo>
+	    <mrow>
+	      <mrow>
+		<mo>{</mo>
+		<mn>0</mn>
+		<mo>}</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mn>1</mn>
+		<mo>}</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mn>1</mn>
+		<mo>}</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mn>1</mn>
+		<mo>}</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mn>0</mn>
+		<mo>}</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mn>1</mn>
+		<mo>}</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mn>0</mn>
+		<mo>}</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mn>1</mn>
+		<mo>}</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mn>0</mn>
+		<mo>}</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mn>1</mn>
+		<mo>}</mo>
+	      </mrow>
+	    </mrow>
+	    <mo>}</mo>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mrow>
+	      <mi>Accumulate</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mi>RandomInteger</mi>
+		<mo>[</mo>
+		<mrow>
+		  <mrow>
+		    <mi>BernoulliDistribution</mi>
+		    <mo>[</mo>
+		    <mn>0.5</mn>
+		    <mo>]</mo>
+		  </mrow>
+		  <mo>,</mo>
+		  <mn>1000</mn>
+		</mrow>
+		<mo>]</mo>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>/</mo>
+	    <mrow>
+	      <mi>Range</mi>
+	      <mo>[</mo>
+	      <mn>1000</mn>
+	      <mo>]</mo>
+	    </mrow>
+	  </mrow>
+	  <mtext> </mtext>
+	  <mo>//</mo>
+	  <mtext> </mtext>
+	  <mi>ListPlot</mi>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_4.gif" alt="ch_4_4.gif" width="450" height="269" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mrow>
+	      <mi>Accumulate</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mi>RandomVariate</mi>
+		<mo>[</mo>
+		<mrow>
+		  <mrow>
+		    <mi>NormalDistribution</mi>
+		    <mo>[</mo>
+		    <mo>]</mo>
+		  </mrow>
+		  <mo>,</mo>
+		  <mn>5000</mn>
+		</mrow>
+		<mo>]</mo>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>/</mo>
+	    <mrow>
+	      <mi>Range</mi>
+	      <mo>[</mo>
+	      <mn>5000</mn>
+	      <mo>]</mo>
+	    </mrow>
+	  </mrow>
+	  <mtext> </mtext>
+	  <mo>//</mo>
+	  <mtext> </mtext>
+	  <mi>ListPlot</mi>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_5.gif" alt="ch_4_5.gif" width="450" height="262" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>ListPlot</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>RandomVariate</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>NormalDistribution</mi>
+		  <mo>[</mo>
+		  <mo>]</mo>
+		</mrow>
+		<mo>,</mo>
+		<mn>1000</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Filling</mi>
+	      <mo>&rightarrow;</mo>
+	      <mi>Axis</mi>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_6.gif" alt="ch_4_6.gif" width="450" height="270" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>ListPlot</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>RandomVariate</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>GeometricDistribution</mi>
+		  <mo>[</mo>
+		  <mrow>
+		    <mn>1</mn>
+		    <mo>/</mo>
+		    <mn>2</mn>
+		  </mrow>
+		  <mo>]</mo>
+		</mrow>
+		<mo>,</mo>
+		<mn>50</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Filling</mi>
+	      <mo>&rightarrow;</mo>
+	      <mi>Axis</mi>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_7.gif" alt="ch_4_7.gif" width="450" height="291" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mrow>
+	      <mi>Accumulate</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mi>RandomInteger</mi>
+		<mo>[</mo>
+		<mrow>
+		  <mrow>
+		    <mo>{</mo>
+		    <mrow>
+		      <mn>0</mn>
+		      <mo>,</mo>
+		      <mn>1</mn>
+		    </mrow>
+		    <mo>}</mo>
+		  </mrow>
+		  <mo>,</mo>
+		  <mn>100</mn>
+		</mrow>
+		<mo>]</mo>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>/</mo>
+	    <mrow>
+	      <mi>Range</mi>
+	      <mo>[</mo>
+	      <mn>100</mn>
+	      <mo>]</mo>
+	    </mrow>
+	  </mrow>
+	  <mtext> </mtext>
+	  <mo>//</mo>
+	  <mtext> </mtext>
+	  <mi>ListPlot</mi>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_8.gif" alt="ch_4_8.gif" width="450" height="286" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Plot</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mn>6</mn>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>x</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mo>(</mo>
+		<mrow>
+		  <mn>1</mn>
+		  <mo>-</mo>
+		  <mi>x</mi>
+		</mrow>
+		<mo>)</mo>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mi>x</mi>
+		<mo>,</mo>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Filling</mi>
+	      <mo>-&gt;</mo>
+	      <mi>Bottom</mi>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_9.gif" alt="ch_4_9.gif" width="450" height="277" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Integrate</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mn>6</mn>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>x</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mo>(</mo>
+		<mrow>
+		  <mn>1</mn>
+		  <mo>-</mo>
+		  <mi>x</mi>
+		</mrow>
+		<mo>)</mo>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>x</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mi>x</mi>
+		<mo>,</mo>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mfrac>
+	  <mn>1</mn>
+	  <mn>2</mn>
+	</mfrac>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <msubsup>
+	    <mo>&Integral;</mo>
+	    <mn>0</mn>
+	    <mn>1</mn>
+	  </msubsup>
+	  <mrow>
+	    <mn>6</mn>
+	    <mo>&InvisibleTimes;</mo>
+	    <mi>x</mi>
+	    <mo>&InvisibleTimes;</mo>
+	    <mrow>
+	      <mo>(</mo>
+	      <mrow>
+		<mn>1</mn>
+		<mo>-</mo>
+		<mi>x</mi>
+	      </mrow>
+	      <mo>)</mo>
+	    </mrow>
+	    <mo>&InvisibleTimes;</mo>
+	    <mi>x</mi>
+	    <mo>&InvisibleTimes;</mo>
+	    <mrow>
+	      <mo>&DifferentialD;</mo>
+	      <mi>x</mi>
+	    </mrow>
+	  </mrow>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mfrac>
+	  <mn>1</mn>
+	  <mn>2</mn>
+	</mfrac>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mtext> </mtext>
+	  <mo>=</mo>
+	  <mtext> </mtext>
+	  <mrow>
+	    <mi>SemanticImport</mi>
+	    <mo>[</mo>
+	    <ms>/Users/codingquark/Documents/Wolfram Mathematica/doing_bayesian_data_analysis/DBDA2Eprograms/HairEyeColor.csv</ms>
+	    <mo>]</mo>
+	  </mrow>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_10.gif" alt="ch_4_10.gif" width="182" height="604" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Mean</mi>
+	  <mo>[</mo>
+	  <mi>data</mi>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>&#61715;</mi>
+	  <mo>&InvisibleTimes;</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>Hair</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>16</mn>
+		</mfrac>
+		<mo>&InvisibleTimes;</mo>
+		<mrow>
+		  <mo>(</mo>
+		  <mrow>
+		    <mrow>
+		      <mn>4</mn>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>Black</mi>
+		    </mrow>
+		    <mo>+</mo>
+		    <mrow>
+		      <mn>4</mn>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>Blond</mi>
+		    </mrow>
+		    <mo>+</mo>
+		    <mrow>
+		      <mn>4</mn>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>Brown</mi>
+		    </mrow>
+		    <mo>+</mo>
+		    <mrow>
+		      <mn>4</mn>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>Red</mi>
+		    </mrow>
+		  </mrow>
+		  <mo>)</mo>
+		</mrow>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Eye</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>16</mn>
+		</mfrac>
+		<mo>&InvisibleTimes;</mo>
+		<mrow>
+		  <mo>(</mo>
+		  <mrow>
+		    <mrow>
+		      <mn>4</mn>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>Blue</mi>
+		    </mrow>
+		    <mo>+</mo>
+		    <mrow>
+		      <mn>4</mn>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>Brown</mi>
+		    </mrow>
+		    <mo>+</mo>
+		    <mrow>
+		      <mn>4</mn>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>Green</mi>
+		    </mrow>
+		    <mo>+</mo>
+		    <mrow>
+		      <mn>4</mn>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>Hazel</mi>
+		    </mrow>
+		  </mrow>
+		  <mo>)</mo>
+		</mrow>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Count</mi>
+	      <mo>&rightarrow;</mo>
+	      <mn>37</mn>
+	    </mrow>
+	  </mrow>
+	  <mo>&InvisibleTimes;</mo>
+	  <mi>&#61716;</mi>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Length</mi>
+	  <mo>[</mo>
+	  <mi>data</mi>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>16</mn>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Normal</mi>
+	  <mo>[</mo>
+	  <mi>data</mi>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mo>{</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Black</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Blue</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>20</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Black</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Brown</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>68</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Black</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Green</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>5</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Black</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Hazel</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>15</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Blond</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Blue</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>94</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Blond</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Brown</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>7</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Blond</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Green</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>16</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Blond</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Hazel</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>10</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Brown</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Blue</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>84</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Brown</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Brown</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>119</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Brown</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Green</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>29</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Brown</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Hazel</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>54</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Red</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Blue</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>17</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Red</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Brown</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>26</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Red</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Green</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>14</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>&#61715;</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mrow>
+		  <mi>Hair</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Red</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Eye</mi>
+		  <mo>&rightarrow;</mo>
+		  <mi>Hazel</mi>
+		</mrow>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Count</mi>
+		  <mo>&rightarrow;</mo>
+		  <mn>14</mn>
+		</mrow>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>&#61716;</mi>
+	    </mrow>
+	  </mrow>
+	  <mo>}</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>Histogram</mi>
+	    <mo>,</mo>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_11.gif" alt="ch_4_11.gif" width="450" height="281" style="vertical-align:middle;" usemap="#map_11" />
+      <map name="map_11">
+	<area shape="rect" coords="302,262,440,239" title="1" nohref="" />
+	<area shape="rect" coords="164,262,302,171" title="4" nohref="" />
+	<area shape="rect" coords="26,262,164,14" title="11" nohref="" />
+      </map>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>GroupBy</mi>
+	      <mo>[</mo>
+	      <ms>Hair</ms>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mi>Total</mi>
+	    <mo>,</mo>
+	    <mtext> </mtext>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_12.gif" alt="ch_4_12.gif" width="109" height="162" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>GroupBy</mi>
+	      <mo>[</mo>
+	      <ms>Eye</ms>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mi>Total</mi>
+	    <mo>,</mo>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_13.gif" alt="ch_4_13.gif" width="109" height="162" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mi>data</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mi>All</mi>
+	      <mo>,</mo>
+	      <ms>Count</ms>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mtext> </mtext>
+	  <mo>//</mo>
+	  <mtext> </mtext>
+	  <mi>Total</mi>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>592</mn>
+      </math>
+    </p>
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_14.gif" alt="ch_4_14.gif" width="206" height="48" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_15.gif" alt="ch_4_15.gif" width="248" height="604" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_16.gif" alt="ch_4_16.gif" width="248" height="604" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>GroupBy</mi>
+	      <mo>[</mo>
+	      <ms>Hair</ms>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mi>Mean</mi>
+	    <mo>,</mo>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_17.gif" alt="ch_4_17.gif" width="109" height="162" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>GroupBy</mi>
+	      <mo>[</mo>
+	      <ms>Eye</ms>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mi>Mean</mi>
+	    <mo>,</mo>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_18.gif" alt="ch_4_18.gif" width="109" height="162" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mi>data</mi>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_19.gif" alt="ch_4_19.gif" width="182" height="604" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>titanic</mi>
+	  <mo>=</mo>
+	  <mtext> </mtext>
+	  <mrow>
+	    <mi>ExampleData</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<ms>Dataset</ms>
+		<mo>,</mo>
+		<ms>Titanic</ms>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_20.gif" alt="ch_4_20.gif" width="260" height="766" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>titanic</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>Histogram</mi>
+	    <mo>,</mo>
+	    <ms>age</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_21.gif" alt="ch_4_21.gif" width="450" height="277" style="vertical-align:middle;" usemap="#map_21" />
+      <map name="map_21">
+	<area shape="rect" coords="416,258,440,256" title="1" nohref="" />
+	<area shape="rect" coords="392,258,416,256" title="1" nohref="" />
+	<area shape="rect" coords="368,258,392,249" title="6" nohref="" />
+	<area shape="rect" coords="344,258,368,250" title="5" nohref="" />
+	<area shape="rect" coords="320,258,344,221" title="27" nohref="" />
+	<area shape="rect" coords="296,258,321,221" title="27" nohref="" />
+	<area shape="rect" coords="272,258,297,200" title="43" nohref="" />
+	<area shape="rect" coords="248,258,273,169" title="66" nohref="" />
+	<area shape="rect" coords="224,258,249,165" title="69" nohref="" />
+	<area shape="rect" coords="200,258,225,121" title="102" nohref="" />
+	<area shape="rect" coords="176,258,201,84" title="130" nohref="" />
+	<area shape="rect" coords="152,258,177,43" title="161" nohref="" />
+	<area shape="rect" coords="128,258,153,13" title="183" nohref="" />
+	<area shape="rect" coords="104,258,129,100" title="118" nohref="" />
+	<area shape="rect" coords="80,258,105,224" title="25" nohref="" />
+	<area shape="rect" coords="57,258,81,216" title="31" nohref="" />
+	<area shape="rect" coords="33,258,57,189" title="51" nohref="" />
+      </map>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>titanic</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>GroupBy</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mi>Key</mi>
+		<mo>[</mo>
+		<ms>sex</ms>
+		<mo>]</mo>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mi>Counts</mi>
+	    <mo>,</mo>
+	    <ms>class</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_22.gif" alt="ch_4_22.gif" width="212" height="128" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Watch https://www.wolfram.com/broadcast/video.php?c=377&amp;p=2&amp;v=1258
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>Histogram</mi>
+	    <mo>,</mo>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_23.gif" alt="ch_4_23.gif" width="141" height="94" style="vertical-align:middle;" usemap="#map_23" />
+      <map name="map_23">
+	<area shape="rect" coords="98,75,137,68" title="1" nohref="" />
+	<area shape="rect" coords="59,75,98,49" title="4" nohref="" />
+	<area shape="rect" coords="20,75,59,4" title="11" nohref="" />
+      </map>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>ListPlot</mi>
+	    <mo>,</mo>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_24.gif" alt="ch_4_24.gif" width="140" height="94" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>GroupBy</mi>
+	      <mo>[</mo>
+	      <ms>Hair</ms>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>GroupBy</mi>
+	      <mo>[</mo>
+	      <ms>Eye</ms>
+	      <mo>]</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_25.gif" alt="ch_4_25.gif" width="789" height="230" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_26.gif" alt="ch_4_26.gif" width="256" height="48" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>592</mn>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>592</mn>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>Mean</mi>
+	    <mo>,</mo>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>37</mn>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>Median</mi>
+	    <mo>,</mo>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mfrac>
+	  <mn>37</mn>
+	  <mn>2</mn>
+	</mfrac>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>Counts</mi>
+	    <mo>,</mo>
+	    <ms>Hair</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_27.gif" alt="ch_4_27.gif" width="109" height="162" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>Counts</mi>
+	    <mo>,</mo>
+	    <ms>Eye</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_28.gif" alt="ch_4_28.gif" width="109" height="162" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>MinMax</mi>
+	    <mo>,</mo>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_29.gif" alt="ch_4_29.gif" width="46" height="94" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>data</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>StandardDeviation</mi>
+	    <mo>,</mo>
+	    <ms>Count</ms>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<msqrt>
+	  <mfrac>
+	    <mn>6314</mn>
+	    <mn>5</mn>
+	  </mfrac>
+	</msqrt>
+      </math>
+    </p>
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_30.gif" alt="ch_4_30.gif" width="356" height="48" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_31.gif" alt="ch_4_31.gif" width="109" height="162" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_32.gif" alt="ch_4_32.gif" width="109" height="162" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>PieChart</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>data</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>GroupBy</mi>
+		  <mo>[</mo>
+		  <ms>Eye</ms>
+		  <mo>]</mo>
+		</mrow>
+		<mo>,</mo>
+		<mi>Total</mi>
+		<mo>,</mo>
+		<ms>Count</ms>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>ChartLegends</mi>
+	      <mo>-&gt;</mo>
+	      <mi>Automatic</mi>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_33.gif" alt="ch_4_33.gif" width="533" height="452" style="vertical-align:middle;" usemap="#map_33" />
+      <map name="map_33">
+	<area shape="rect" coords="-4503599627370496,4503599627370724,4503599627370495,-4503599627370266" title="64" nohref="" />
+	<area shape="rect" coords="40,381,226,225" title="93" nohref="" />
+	<area shape="rect" coords="122,411,244,225" title="64" nohref="" />
+	<area shape="rect" coords="224,410,410,85" title="220" nohref="" />
+	<area shape="rect" coords="40,227,346,41" title="215" nohref="" />
+      </map>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>PieChart</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>data</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>GroupBy</mi>
+		  <mo>[</mo>
+		  <ms>Hair</ms>
+		  <mo>]</mo>
+		</mrow>
+		<mo>,</mo>
+		<mi>Total</mi>
+		<mo>,</mo>
+		<ms>Count</ms>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>ChartLegends</mi>
+	      <mo>-&gt;</mo>
+	      <mi>Automatic</mi>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_34.gif" alt="ch_4_34.gif" width="533" height="452" style="vertical-align:middle;" usemap="#map_34" />
+      <map name="map_34">
+	<area shape="rect" coords="-4503599627370496,4503599627370724,4503599627370495,-4503599627370266" title="71" nohref="" />
+	<area shape="rect" coords="40,353,226,225" title="71" nohref="" />
+	<area shape="rect" coords="90,411,410,114" title="286" nohref="" />
+	<area shape="rect" coords="148,227,373,41" title="127" nohref="" />
+	<area shape="rect" coords="40,227,226,57" title="108" nohref="" />
+      </map>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mi>data</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mi>GroupBy</mi>
+	      <mo>[</mo>
+	      <ms>Eye</ms>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mtext> </mtext>
+	  <mo>//</mo>
+	  <mi>Normal</mi>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>&#61715;</mi>
+	  <mo>&InvisibleTimes;</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>Blue</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mrow>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Black</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Blue</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>20</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Blond</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Blue</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>94</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Brown</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Blue</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>84</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Red</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Blue</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>17</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		</mrow>
+		<mo>}</mo>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Brown</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mrow>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Black</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Brown</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>68</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Blond</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Brown</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>7</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Brown</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Brown</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>119</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Red</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Brown</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>26</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		</mrow>
+		<mo>}</mo>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Green</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mrow>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Black</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Green</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>5</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Blond</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Green</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>16</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Brown</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Green</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>29</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Red</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Green</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>14</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		</mrow>
+		<mo>}</mo>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Hazel</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mo>{</mo>
+		<mrow>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Black</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Hazel</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>15</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Blond</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Hazel</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>10</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Brown</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Hazel</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>54</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>&#61715;</mi>
+		    <mo>&InvisibleTimes;</mo>
+		    <mrow>
+		      <mrow>
+			<mi>Hair</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Red</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Eye</mi>
+			<mo>&rightarrow;</mo>
+			<mi>Hazel</mi>
+		      </mrow>
+		      <mo>,</mo>
+		      <mrow>
+			<mi>Count</mi>
+			<mo>&rightarrow;</mo>
+			<mn>14</mn>
+		      </mrow>
+		    </mrow>
+		    <mo>&InvisibleTimes;</mo>
+		    <mi>&#61716;</mi>
+		  </mrow>
+		</mrow>
+		<mo>}</mo>
+	      </mrow>
+	    </mrow>
+	  </mrow>
+	  <mo>&InvisibleTimes;</mo>
+	  <mi>&#61716;</mi>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Text">
+      Given the structure so far, we need to figure out a way to have named rows, nested with further named rows. Like so: {&ldquo;Brown Eye&rdquo;-&gt;{&ldquo;Black Hair&rdquo;-&gt;4, &ldquo;Blond Hair&rdquo;-&gt;10}, &ldquo;Blue Eye&rdquo;-&gt;...}<br />Not sure if this should be done at import time, or as the next step <span style='font-style: italic;'>after</span> import.
+    </p>
+
+
+
+    <p class="Title">
+      Importing Data
+    </p>
+
+
+
+    <p class="Section">
+      How should it look like?
+    </p>
+
+
+
+    <p class="Text">
+      We want our Hair + Eye colour data to be structured &ldquo;nicely&rdquo; before we start doing analysis. What is this &ldquo;nice&rdquo; structure?
+    </p>
+
+
+
+    <p class="Text">
+      If imported simply, this is what it looks like:
+    </p>
+
+
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_35.gif" alt="ch_4_35.gif" width="1163" height="48" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_36.gif" alt="ch_4_36.gif" width="182" height="604" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      This structure is not bad, it correctly figures out that the first row of the CSV is column names. But is this how we want things to be? Could we have more structure to it?<br /><br />One approach can be to add some named rows. For example, we can imagine that the <span style='font-style: italic;'>actual</span> data point in the entire dataset is the `Count` column, rest are just names! Which means, we can have rows of rows.<br /><br />Let&rsquo;s try. What does the structure look like?
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>planets</mi>
+	  <mtext> </mtext>
+	  <mo>=</mo>
+	  <mtext> </mtext>
+	  <mrow>
+	    <mi>ExampleData</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<ms>Dataset</ms>
+		<mo>,</mo>
+		<ms>Planets</ms>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_37.gif" alt="ch_4_37.gif" width="643" height="632" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>planets</mi>
+	  <mo>//</mo>
+	  <mi>Normal</mi>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>&#61715;</mi>
+	  <mo>&InvisibleTimes;</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>Mercury</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mi>&#61715;</mi>
+		<mo>&InvisibleTimes;</mo>
+		<mrow>
+		  <mrow>
+		    <mi>Mass</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Radius</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Moons</mi>
+		    <mo>&rightarrow;</mo>
+		    <mrow>
+		      <mi>&#61715;</mi>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>&#61716;</mi>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mo>&InvisibleTimes;</mo>
+		<mi>&#61716;</mi>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Venus</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mi>&#61715;</mi>
+		<mo>&InvisibleTimes;</mo>
+		<mrow>
+		  <mrow>
+		    <mi>Mass</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Radius</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Moons</mi>
+		    <mo>&rightarrow;</mo>
+		    <mrow>
+		      <mi>&#61715;</mi>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>&#61716;</mi>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mo>&InvisibleTimes;</mo>
+		<mi>&#61716;</mi>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Earth</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mi>&#61715;</mi>
+		<mo>&InvisibleTimes;</mo>
+		<mrow>
+		  <mrow>
+		    <mi>Mass</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Radius</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Moons</mi>
+		    <mo>&rightarrow;</mo>
+		    <mrow>
+		      <mi>&#61715;</mi>
+		      <mo>&InvisibleTimes;</mo>
+		      <mrow>
+			<mi>Moon</mi>
+			<mo>&rightarrow;</mo>
+			<mrow>
+			  <mi>&#61715;</mi>
+			  <mo>&InvisibleTimes;</mo>
+			  <mrow>
+			    <mrow>
+			      <mi>Mass</mi>
+			      <mo>&rightarrow;</mo>
+			      <none />
+			    </mrow>
+			    <mo>,</mo>
+			    <mrow>
+			      <mi>Radius</mi>
+			      <mo>&rightarrow;</mo>
+			      <none />
+			    </mrow>
+			  </mrow>
+			  <mo>&InvisibleTimes;</mo>
+			  <mi>&#61716;</mi>
+			</mrow>
+		      </mrow>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>&#61716;</mi>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mo>&InvisibleTimes;</mo>
+		<mi>&#61716;</mi>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Mars</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mi>&#61715;</mi>
+		<mo>&InvisibleTimes;</mo>
+		<mrow>
+		  <mrow>
+		    <mi>Mass</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Radius</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Moons</mi>
+		    <mo>&rightarrow;</mo>
+		    <mrow>
+		      <mi>&#61715;</mi>
+		      <mo>&InvisibleTimes;</mo>
+		      <mrow>
+			<mrow>
+			  <mi>Phobos</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Deimos</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+		      </mrow>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>&#61716;</mi>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mo>&InvisibleTimes;</mo>
+		<mi>&#61716;</mi>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Jupiter</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mi>&#61715;</mi>
+		<mo>&InvisibleTimes;</mo>
+		<mrow>
+		  <mrow>
+		    <mi>Mass</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Radius</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Moons</mi>
+		    <mo>&rightarrow;</mo>
+		    <mrow>
+		      <mi>&#61715;</mi>
+		      <mo>&InvisibleTimes;</mo>
+		      <mrow>
+			<mrow>
+			  <mi>Metis</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Adrastea</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Amalthea</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Thebe</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Io</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Europa</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Ganymede</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Callisto</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Themisto</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Leda</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Himalia</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Lysithea</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Elara</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2000 J11</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J12</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Carpo</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Euporie</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J3</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J18</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Orthosie</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Euanthe</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Harpalyke</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Praxidike</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Thyone</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J16</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Iocaste</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Mneme</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Hermippe</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Thelxinoe</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Helike</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Ananke</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J15</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Eurydome</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Arche</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Herse</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Pasithee</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J10</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Chaldene</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Isonoe</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Erinome</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Kale</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Aitne</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Taygete</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J9</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Carme</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Sponde</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Megaclite</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J5</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J19</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J23</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Kalyke</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Kore</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Pasiphae</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Eukelade</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J4</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Sinope</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Hegemone</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Aoede</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Kallichore</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Autonoe</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Callirrhoe</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Cyllene</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2003 J2</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+		      </mrow>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>&#61716;</mi>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mo>&InvisibleTimes;</mo>
+		<mi>&#61716;</mi>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Saturn</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mi>&#61715;</mi>
+		<mo>&InvisibleTimes;</mo>
+		<mrow>
+		  <mrow>
+		    <mi>Mass</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Radius</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Moons</mi>
+		    <mo>&rightarrow;</mo>
+		    <mrow>
+		      <mi>&#61715;</mi>
+		      <mo>&InvisibleTimes;</mo>
+		      <mrow>
+			<mrow>
+			  <mi>Tarqeq</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Pan</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Daphnis</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Atlas</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Prometheus</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Pandora</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Epimetheus</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Janus</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Aegaeon</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Mimas</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Methone</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Anthe</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Pallene</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Enceladus</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Tethys</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Calypso</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Telesto</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Polydeuces</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Dione</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Helene</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Rhea</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Titan</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Hyperion</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Iapetus</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Kiviuq</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Ijiraq</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Phoebe</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Paaliaq</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Skathi</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Albiorix</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2007 S2</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Bebhionn</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Erriapo</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Siarnaq</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Skoll</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Tarvos</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Greip</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2004 S13</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Hyrrokkin</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Mundilfari</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2006 S1</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Jarnsaxa</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Narvi</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Bergelmir</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2004 S17</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Suttungr</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Hati</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2004 S12</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Bestla</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Farbauti</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Thrymr</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2007 S3</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Aegir</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2004 S7</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mtext>S/2006 S3</mtext>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Kari</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Fenrir</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Surtur</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Ymir</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Loge</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Fornjot</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+		      </mrow>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>&#61716;</mi>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mo>&InvisibleTimes;</mo>
+		<mi>&#61716;</mi>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Uranus</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mi>&#61715;</mi>
+		<mo>&InvisibleTimes;</mo>
+		<mrow>
+		  <mrow>
+		    <mi>Mass</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Radius</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Moons</mi>
+		    <mo>&rightarrow;</mo>
+		    <mrow>
+		      <mi>&#61715;</mi>
+		      <mo>&InvisibleTimes;</mo>
+		      <mrow>
+			<mrow>
+			  <mi>Cordelia</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Ophelia</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Bianca</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Cressida</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Desdemona</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Juliet</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Portia</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Rosalind</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Cupid</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Belinda</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Perdita</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Puck</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Mab</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Miranda</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Ariel</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Umbriel</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Titania</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Oberon</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Francisco</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Caliban</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Stephano</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Trinculo</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Sycorax</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Margaret</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Prospero</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Setebos</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Ferdinand</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+		      </mrow>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>&#61716;</mi>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mo>&InvisibleTimes;</mo>
+		<mi>&#61716;</mi>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>Neptune</mi>
+	      <mo>&rightarrow;</mo>
+	      <mrow>
+		<mi>&#61715;</mi>
+		<mo>&InvisibleTimes;</mo>
+		<mrow>
+		  <mrow>
+		    <mi>Mass</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Radius</mi>
+		    <mo>&rightarrow;</mo>
+		    <none />
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>Moons</mi>
+		    <mo>&rightarrow;</mo>
+		    <mrow>
+		      <mi>&#61715;</mi>
+		      <mo>&InvisibleTimes;</mo>
+		      <mrow>
+			<mrow>
+			  <mi>Naiad</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Thalassa</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Despina</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Galatea</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Larissa</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Proteus</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Triton</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Nereid</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Halimede</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Sao</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Laomedeia</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Psamathe</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+			<mo>,</mo>
+			<mrow>
+			  <mi>Neso</mi>
+			  <mo>&rightarrow;</mo>
+			  <mrow>
+			    <mi>&#61715;</mi>
+			    <mo>&InvisibleTimes;</mo>
+			    <mrow>
+			      <mrow>
+				<mi>Mass</mi>
+				<mo>&rightarrow;</mo>
+				<mrow>
+				  <mi>Missing</mi>
+				  <mo>[</mo>
+				  <mi>NotAvailable</mi>
+				  <mo>]</mo>
+				</mrow>
+			      </mrow>
+			      <mo>,</mo>
+			      <mrow>
+				<mi>Radius</mi>
+				<mo>&rightarrow;</mo>
+				<none />
+			      </mrow>
+			    </mrow>
+			    <mo>&InvisibleTimes;</mo>
+			    <mi>&#61716;</mi>
+			  </mrow>
+			</mrow>
+		      </mrow>
+		      <mo>&InvisibleTimes;</mo>
+		      <mi>&#61716;</mi>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mo>&InvisibleTimes;</mo>
+		<mi>&#61716;</mi>
+	      </mrow>
+	    </mrow>
+	  </mrow>
+	  <mo>&InvisibleTimes;</mo>
+	  <mi>&#61716;</mi>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Text">
+      Okay, now that we know how data is represented, we can try manually creating a row or two for our data.
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>dataset</mi>
+	  <mo>=</mo>
+	  <mrow>
+	    <mi>Dataset</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mtext>&lt;|</mtext>
+	      <mrow>
+		<ms>Black</ms>
+		<mo>-&gt;</mo>
+		<mrow>
+		  <mtext>&lt;|</mtext>
+		  <mrow>
+		    <mrow>
+		      <ms>Blue</ms>
+		      <mo>-&gt;</mo>
+		      <mrow>
+			<mtext>&lt;|</mtext>
+			<mrow>
+			  <ms>Count</ms>
+			  <mo>-&gt;</mo>
+			  <mn>20</mn>
+			</mrow>
+			<mtext>|&gt;</mtext>
+		      </mrow>
+		    </mrow>
+		    <mo>,</mo>
+		    <mrow>
+		      <mtext>&lt;|</mtext>
+		      <mrow>
+			<ms>Brown</ms>
+			<mo>-&gt;</mo>
+			<mrow>
+			  <mtext>&lt;|</mtext>
+			  <mrow>
+			    <ms>Count</ms>
+			    <mo>-&gt;</mo>
+			    <mn>68</mn>
+			  </mrow>
+			  <mtext>|&gt;</mtext>
+			</mrow>
+		      </mrow>
+		      <mtext>|&gt;</mtext>
+		    </mrow>
+		  </mrow>
+		  <mtext>|&gt;</mtext>
+		</mrow>
+	      </mrow>
+	      <mtext>|&gt;</mtext>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_38.gif" alt="ch_4_38.gif" width="188" height="128" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Does this look good? We don&rsquo;t have column names for Hair and Eye, but we do for Count. Is that normal? If you look at the Moons in the planet dataset, you can see that the names of of moons are not column-named, but their properties are column-named. Which is analogous to what we have for our dataset as well.<br /><br />Let&rsquo;s finalise on this structure for now, and find out how to convert the imported data.
+    </p>
+
+
+
+    <p class="Section">
+      Structuring Imported Dataset
+    </p>
+
+
+
+    <p class="Text">
+      So far, I have not found any <span style='font-style: italic;'>simple</span> way to morph the dataset. The important note found so far is that we cannot modify existing Dataset, but instead have to create new Dataset with the structure we want. What this means, is that we will have to define Column/Row structure and select proper Count columns for the new Dataset definition.<br /><br />This manual approach is too much hassle. And figuring out &ldquo;script-like&rdquo; way to change the structure is not attractive right now.<br /><br />Hence, we will try to roll with what we have and see what happens when we try doing operations on the data.
+    </p>
+
+
+
+    <p class="Subsection">
+      References
+    </p>
+
+
+
+    <p class="ItemNumbered">
+      https://www.wolfram.com/broadcast/video.php?c=377&amp;p=2&amp;v=1258
+    </p>
+
+
+
+    <p class="ItemNumbered">
+      https://www.youtube.com/watch?v=XN8Y177doEE
+    </p>
+
+
+
+    <p class="ItemNumbered">
+      https://www.wolfram.com/wolfram-u/courses/data-science/becoming-a-data-curator-dat906/
+    </p>
+
+
+
+    <p class="Title">
+      Basic Analysis
+    </p>
+
+
+
+    <p class="Section">
+      Exercises from 4.6
+    </p>
+
+
+
+    <p class="Subsection">
+      Exercise 4.1
+    </p>
+
+
+
+    <p class="Text">
+      The eye-color hair-color data is frequencies of eye and hair color for males and females. Run the (some, we are going to ignore them) R code.<br /><br />In your write-up, include each line above and its results. <span style='font-style: italic;'>Explain</span> what each line does (in a bit more detail than the inline comments). Extend above commands by also computing the probabilities of the hair colors given brown eyes, and the probabilities of the eye colors given Brown hair.
+    </p>
+
+
+
+    <p class="Text">
+      First, let&rsquo;s import the data and <span style='font-style: italic;'>show it.</span>
+    </p>
+
+
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_39.gif" alt="ch_4_39.gif" width="1163" height="48" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_40.gif" alt="ch_4_40.gif" width="182" height="604" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Run equivalent of: <br /><span class="InlineCodeInline"><span><img src="/assets/images/mathematica/dog_book/ch_4_41.gif" alt="ch_4_41.gif" width="522" height="68" style="vertical-align:middle" /></span></span>
+    </p>
+
+
+
+    <p class="Text">
+      Funnily enough, the R code given by the book loads the CSV, <span style='font-style: italic;'>generates Male/Female split</span>, and then store in the variable &ldquo;HairEyeColor&rdquo;. The &ldquo;sum&rdquo; application then gives the data we have got already!
+    </p>
+
+
+
+    <p class="Text">
+      Next line is dividing each <span style='font-style: italic;'>cell</span> by the total.
+    </p>
+
+
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_42.gif" alt="ch_4_42.gif" width="745" height="48" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_43.gif" alt="ch_4_43.gif" width="275" height="604" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      To find total counts of each hair-color:
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>hairfrequencydataset</mi>
+	  <mo>=</mo>
+	  <mrow>
+	    <mi>dataset</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mrow>
+		<mi>GroupBy</mi>
+		<mo>[</mo>
+		<ms>Hair</ms>
+		<mo>]</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mi>Total</mi>
+	      <mo>,</mo>
+	      <ms>Count</ms>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_44.gif" alt="ch_4_44.gif" width="109" height="162" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Like we added the Frequency column above for <span style='font-style: italic;'>all</span> rows, do the same but for the grouped data:
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>hairproportions</mi>
+	  <mo>=</mo>
+	  <mrow>
+	    <mi>hairfrequencydataset</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mi>All</mi>
+	      <mo>,</mo>
+	      <mrow>
+		<mrow>
+		  <mtext>&lt;|</mtext>
+		  <mrow>
+		    <ms>Frequency</ms>
+		    <mo>-&gt;</mo>
+		    <mrow>
+		      <mi>#1</mi>
+		      <mo>/</mo>
+		      <mi>counttotal</mi>
+		    </mrow>
+		  </mrow>
+		  <mtext>|&gt;</mtext>
+		</mrow>
+		<mo>&amp;</mo>
+	      </mrow>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_45.gif" alt="ch_4_45.gif" width="155" height="196" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Same operations now for eye colors:
+    </p>
+
+
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_46.gif" alt="ch_4_46.gif" width="719" height="48" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_47.gif" alt="ch_4_47.gif" width="109" height="162" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_48.gif" alt="ch_4_48.gif" width="155" height="196" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Calculate <span style='font-style: italic;'>conditional probability</span> of Hair, given Blue eye color (table 4.2):
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mi>haireyeproportion</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mi>Select</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>#Eye</mi>
+		  <mo>==</mo>
+		  <ms>Blue</ms>
+		</mrow>
+		<mo>&amp;</mo>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>All</mi>
+	    <mo>,</mo>
+	    <mrow>
+	      <mrow>
+		<mtext>&lt;|</mtext>
+		<mrow>
+		  <mrow>
+		    <ms>Hair</ms>
+		    <mo>-&gt;</mo>
+		    <mi>#Hair</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <ms>Frequency</ms>
+		    <mo>-&gt;</mo>
+		    <mrow>
+		      <mi>N</mi>
+		      <mo>[</mo>
+		      <mrow>
+			<mi>#Frequency</mi>
+			<mo>/</mo>
+			<mrow>
+			  <mi>eyeproportions</mi>
+			  <mo>[</mo>
+			  <mrow>
+			    <ms>Blue</ms>
+			    <mo>,</mo>
+			    <ms>Frequency</ms>
+			  </mrow>
+			  <mo>]</mo>
+			</mrow>
+		      </mrow>
+		      <mo>]</mo>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mtext>|&gt;</mtext>
+	      </mrow>
+	      <mo>&amp;</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_49.gif" alt="ch_4_49.gif" width="155" height="196" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Calculate conditional probability of hair colors given brown eyes:
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mi>haireyeproportion</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mi>Select</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>#Eye</mi>
+		  <mo>==</mo>
+		  <ms>Brown</ms>
+		</mrow>
+		<mo>&amp;</mo>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>All</mi>
+	    <mo>,</mo>
+	    <mrow>
+	      <mrow>
+		<mtext>&lt;|</mtext>
+		<mrow>
+		  <mrow>
+		    <ms>Hair</ms>
+		    <mo>-&gt;</mo>
+		    <mi>#Hair</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <ms>Frequency</ms>
+		    <mo>-&gt;</mo>
+		    <mrow>
+		      <mi>N</mi>
+		      <mo>[</mo>
+		      <mrow>
+			<mi>#Frequency</mi>
+			<mo>/</mo>
+			<mrow>
+			  <mi>eyeproportions</mi>
+			  <mo>[</mo>
+			  <mrow>
+			    <ms>Brown</ms>
+			    <mo>,</mo>
+			    <ms>Frequency</ms>
+			  </mrow>
+			  <mo>]</mo>
+			</mrow>
+		      </mrow>
+		      <mo>]</mo>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mtext>|&gt;</mtext>
+	      </mrow>
+	      <mo>&amp;</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_50.gif" alt="ch_4_50.gif" width="155" height="196" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Calculate conditional probability of <span style='font-style: italic;'>eye colors</span> given brown hair:
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mi>haireyeproportion</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mi>Select</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>#Hair</mi>
+		  <mo>==</mo>
+		  <ms>Brown</ms>
+		</mrow>
+		<mo>&amp;</mo>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>All</mi>
+	    <mo>,</mo>
+	    <mrow>
+	      <mrow>
+		<mtext>&lt;|</mtext>
+		<mrow>
+		  <mrow>
+		    <ms>Eye</ms>
+		    <mo>-&gt;</mo>
+		    <mi>#Eye</mi>
+		  </mrow>
+		  <mo>,</mo>
+		  <mrow>
+		    <ms>Frequency</ms>
+		    <mo>-&gt;</mo>
+		    <mrow>
+		      <mi>N</mi>
+		      <mo>[</mo>
+		      <mrow>
+			<mi>#Frequency</mi>
+			<mo>/</mo>
+			<mrow>
+			  <mi>hairproportions</mi>
+			  <mo>[</mo>
+			  <mrow>
+			    <ms>Brown</ms>
+			    <mo>,</mo>
+			    <ms>Frequency</ms>
+			  </mrow>
+			  <mo>]</mo>
+			</mrow>
+		      </mrow>
+		      <mo>]</mo>
+		    </mrow>
+		  </mrow>
+		</mrow>
+		<mtext>|&gt;</mtext>
+	      </mrow>
+	      <mo>&amp;</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_51.gif" alt="ch_4_51.gif" width="155" height="196" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Let&rsquo;s now try to understand, verbally, what the exercise was about.<br /><br />We were given raw counts for hair+eye colour combos. Just like one of the section in the chapter, we wanted to get to finding out conditional probabilities.<br /><br />To get to conditional probabilities, we needed some basic information derived first:
+    </p>
+
+
+
+    <p class="ItemNumbered">
+      Proportions of each hair+eye colour combo
+    </p>
+
+
+
+    <p class="ItemNumbered">
+      Proportions of each hair colour
+    </p>
+
+
+
+    <p class="ItemNumbered">
+      Proportions of each eye colour
+    </p>
+
+
+
+    <p class="Text">
+      When we calculate hair+eye proportions, we are calculating <span style='font-style: italic;'>joint probabilities.</span> For example, the probability of finding someone with <span style='font-style: italic;'>both</span> Brown eyes and Black hair is 0.11 i.e. 11% and so on.<br /><br />When we calculate the proportions of only hair or only eye colours, we are measuring probability of finding, for example, a person with black hair; a person with blue eyes and so on. For example, the probability of finding a person with Black hair is 0.18 / 18%; a person with Brown eyes is 0.37 / 37%
+    </p>
+
+
+
+    <p class="Text">
+      Finally, we can use the derived information to calculate conditional probabilities. To calculate the probability of a person having Hazel eyes, given we know that the person has Blond hair we need to divide <span style='font-style: italic;'>independent probability</span> by <span style='font-style: italic;'>marginal probability</span>. So, for the specific case, the calculation is: 0.0168919/0.214527 = 0.078 (~7%)
+    </p>
+
+
+
+    <p class="Text">
+      Thus ends a successful Exercise 4.1! Notice how the entire exercise was about calculating proportions in various ways and it did not feel the way it did when reading the section of the book.
+    </p>
+
+
+
+    <p class="Subsection">
+      Exercise 4.2
+    </p>
+
+
+
+    <p class="Text">
+      Modify the coin flipping program in Section 4.5 to simulate a biased coin that has p(H)=0.8. Change the height of the reference line in the plot to match p(H). Comment your code.
+    </p>
+
+
+
+    <p class="Text">
+      Okay, this is more involved since it is mainly about R code. We will have to first write code to simulate coin flips, then make the coin flips biased.
+    </p>
+
+
+
+    <p class="Text">
+      Alright, let&rsquo;s think about this. The R code uses `sample` function that takes <span style='font-style: italic;'>probability</span> values with with to take the samples. We need something similar in Mathematica. But what is our real goal? We want to flip a coin - [H,T]. And when it is flipped we want to specify how biased the coin is. Having flipped the coin N times, we want to plot the <span style='font-style: italic;'>running proportion of H</span> and know the end proportion.<br /><br />First, we have <span class="InlineCodeInline"><span>RandomVariate</span></span> function that can take some distribution. The one we might find useful is <span class="InlineCodeInline"><span>DiscreteUniformDistribution</span></span>. Let&rsquo;s try.<span style='font-size: 14px;font-style: italic;'>&nbsp;&nbsp;</span>
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mi>RandomVariate</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mrow>
+		<mi>DiscreteUniformDistribution</mi>
+		<mo>[</mo>
+		<mrow>
+		  <mo>{</mo>
+		  <mrow>
+		    <mn>0</mn>
+		    <mo>,</mo>
+		    <mn>1</mn>
+		  </mrow>
+		  <mo>}</mo>
+		</mrow>
+		<mo>]</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mn>10</mn>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mtext> </mtext>
+	  <mo>//</mo>
+	  <mtext> </mtext>
+	  <mi>Short</mi>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mo>{</mo>
+	  <mrow>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	  </mrow>
+	  <mo>}</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Histogram</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>RandomVariate</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mrow>
+		<mi>DiscreteUniformDistribution</mi>
+		<mo>[</mo>
+		<mrow>
+		  <mo>{</mo>
+		  <mrow>
+		    <mn>0</mn>
+		    <mo>,</mo>
+		    <mn>1</mn>
+		  </mrow>
+		  <mo>}</mo>
+		</mrow>
+		<mo>]</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mn>500</mn>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_52.gif" alt="ch_4_52.gif" width="450" height="277" style="vertical-align:middle;" usemap="#map_52" />
+      <map name="map_52">
+	<area shape="rect" coords="236,258,440,43" title="234" nohref="" />
+	<area shape="rect" coords="33,258,237,13" title="266" nohref="" />
+      </map>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mi>tosses</mi>
+	    <mo>=</mo>
+	    <mrow>
+	      <mi>RandomVariate</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>DiscreteUniformDistribution</mi>
+		  <mo>[</mo>
+		  <mrow>
+		    <mo>{</mo>
+		    <mrow>
+		      <mn>0</mn>
+		      <mo>,</mo>
+		      <mn>1</mn>
+		    </mrow>
+		    <mo>}</mo>
+		  </mrow>
+		  <mo>]</mo>
+		</mrow>
+		<mo>,</mo>
+		<mn>500</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>;</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>N</mi>
+	  <mo>[</mo>
+	  <mfrac>
+	    <mrow>
+	      <mi>Count</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mi>tosses</mi>
+		<mo>,</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mn>500</mn>
+	  </mfrac>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>0.456</mn>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>N</mi>
+	  <mo>[</mo>
+	  <mfrac>
+	    <mrow>
+	      <mi>Count</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mi>tosses</mi>
+		<mo>,</mo>
+		<mn>0</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mn>500</mn>
+	  </mfrac>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>0.544</mn>
+      </math>
+    </p>
+
+    <p class="Text">
+      There, we got the end proportions of the fair die after 500 tosses.
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mi>manytosses</mi>
+	    <mo>=</mo>
+	    <mrow>
+	      <mi>RandomVariate</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>DiscreteUniformDistribution</mi>
+		  <mo>[</mo>
+		  <mrow>
+		    <mo>{</mo>
+		    <mrow>
+		      <mn>0</mn>
+		      <mo>,</mo>
+		      <mn>1</mn>
+		    </mrow>
+		    <mo>}</mo>
+		  </mrow>
+		  <mo>]</mo>
+		</mrow>
+		<mo>,</mo>
+		<mn>50000</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>;</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>ListPlot</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>Accumulate</mi>
+	    <mo>[</mo>
+	    <mfrac>
+	      <mi>manytosses</mi>
+	      <mrow>
+		<mi>Length</mi>
+		<mo>[</mo>
+		<mi>manytosses</mi>
+		<mo>]</mo>
+	      </mrow>
+	    </mfrac>
+	    <mo>]</mo>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_53.gif" alt="ch_4_53.gif" width="450" height="279" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>ListLinePlot</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>Accumulate</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mi>Select</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mi>tosses</mi>
+		<mo>,</mo>
+		<mrow>
+		  <mrow>
+		    <mi>#</mi>
+		    <mo>==</mo>
+		    <mn>1</mn>
+		  </mrow>
+		  <mo>&amp;</mo>
+		</mrow>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_54.gif" alt="ch_4_54.gif" width="450" height="282" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Still no idea how to get &ldquo;running proportion&rdquo;! FoldList works, but does not give access to current index of the list. MapIndex does not keep track of previous elements. Looks like we will have to write our own function. Not fun, I must say.
+    </p>
+
+
+
+    <p class="Text">
+      Stolen the following code from https://mathematica.stackexchange.com/questions/190503/how-to-make-foldlistindexed-ie-foldlist-with-an-index-or-iterator
+    </p>
+
+
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_55.gif" alt="ch_4_55.gif" width="664" height="48" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mo>{</mo>
+	  <mrow>
+	    <mi>x</mi>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>f</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mi>x</mi>
+		<mo>,</mo>
+		<mi>a</mi>
+		<mo>,</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>f</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>f</mi>
+		  <mo>[</mo>
+		  <mrow>
+		    <mi>x</mi>
+		    <mo>,</mo>
+		    <mi>a</mi>
+		    <mo>,</mo>
+		    <mn>1</mn>
+		  </mrow>
+		  <mo>]</mo>
+		</mrow>
+		<mo>,</mo>
+		<mi>b</mi>
+		<mo>,</mo>
+		<mn>2</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>f</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>f</mi>
+		  <mo>[</mo>
+		  <mrow>
+		    <mrow>
+		      <mi>f</mi>
+		      <mo>[</mo>
+		      <mrow>
+			<mi>x</mi>
+			<mo>,</mo>
+			<mi>a</mi>
+			<mo>,</mo>
+			<mn>1</mn>
+		      </mrow>
+		      <mo>]</mo>
+		    </mrow>
+		    <mo>,</mo>
+		    <mi>b</mi>
+		    <mo>,</mo>
+		    <mn>2</mn>
+		  </mrow>
+		  <mo>]</mo>
+		</mrow>
+		<mo>,</mo>
+		<mi>c</mi>
+		<mo>,</mo>
+		<mn>3</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>f</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mi>f</mi>
+		  <mo>[</mo>
+		  <mrow>
+		    <mrow>
+		      <mi>f</mi>
+		      <mo>[</mo>
+		      <mrow>
+			<mrow>
+			  <mi>f</mi>
+			  <mo>[</mo>
+			  <mrow>
+			    <mi>x</mi>
+			    <mo>,</mo>
+			    <mi>a</mi>
+			    <mo>,</mo>
+			    <mn>1</mn>
+			  </mrow>
+			  <mo>]</mo>
+			</mrow>
+			<mo>,</mo>
+			<mi>b</mi>
+			<mo>,</mo>
+			<mn>2</mn>
+		      </mrow>
+		      <mo>]</mo>
+		    </mrow>
+		    <mo>,</mo>
+		    <mi>c</mi>
+		    <mo>,</mo>
+		    <mn>3</mn>
+		  </mrow>
+		  <mo>]</mo>
+		</mrow>
+		<mo>,</mo>
+		<mi>d</mi>
+		<mo>,</mo>
+		<mn>4</mn>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>}</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>fewtosses</mi>
+	  <mo>=</mo>
+	  <mrow>
+	    <mo>{</mo>
+	    <mrow>
+	      <mn>1</mn>
+	      <mo>,</mo>
+	      <mn>1</mn>
+	      <mo>,</mo>
+	      <mn>0</mn>
+	      <mo>,</mo>
+	      <mn>1</mn>
+	      <mo>,</mo>
+	      <mn>1</mn>
+	      <mo>,</mo>
+	      <mn>0</mn>
+	      <mo>,</mo>
+	      <mn>1</mn>
+	      <mo>,</mo>
+	      <mn>0</mn>
+	      <mo>,</mo>
+	      <mn>0</mn>
+	      <mo>,</mo>
+	      <mn>0</mn>
+	    </mrow>
+	    <mo>}</mo>
+	  </mrow>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mo>{</mo>
+	  <mrow>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	  </mrow>
+	  <mo>}</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Text">
+      This approach <span style='font-style: italic;'>may</span> not be the thing we want. What we want is a list: <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+																     mathematica:form='TraditionalForm'
+																     xmlns:mathematica='http://www.wolfram.com/XML/'>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>1</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>2</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>3</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>3</mn>
+		  <mn>4</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>4</mn>
+		  <mn>5</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>4</mn>
+		  <mn>6</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>5</mn>
+		  <mn>7</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>5</mn>
+		  <mn>8</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>5</mn>
+		  <mn>9</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>5</mn>
+		  <mn>10</mn>
+		</mfrac>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+      </math></span></span> and so on.
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>For</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mrow>
+		<mi>i</mi>
+		<mo>=</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>;</mo>
+	      <mrow>
+		<mi>res</mi>
+		<mo>=</mo>
+		<mrow>
+		  <mo>{</mo>
+		  <mo>}</mo>
+		</mrow>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>i</mi>
+	      <mo>&lt;=</mo>
+	      <mrow>
+		<mi>Length</mi>
+		<mo>[</mo>
+		<mi>tosses</mi>
+		<mo>]</mo>
+	      </mrow>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>i</mi>
+	      <mo>++</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>AppendTo</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mi>res</mi>
+		<mo>,</mo>
+		<mrow>
+		  <mi>Last</mi>
+		  <mo>@</mo>
+		  <mfrac>
+		    <mrow>
+		      <mi>FoldList</mi>
+		      <mo>[</mo>
+		      <mrow>
+			<mi>Plus</mi>
+			<mo>,</mo>
+			<mn>0</mn>
+			<mo>,</mo>
+			<mrow>
+			  <mi>tosses</mi>
+			  <mo>[</mo>
+			  <mrow>
+			    <mo>[</mo>
+			    <mrow>
+			      <mtext>;;</mtext>
+			      <mi>i</mi>
+			    </mrow>
+			    <mo>]</mo>
+			  </mrow>
+			  <mo>]</mo>
+			</mrow>
+		      </mrow>
+		      <mo>]</mo>
+		    </mrow>
+		    <mi>i</mi>
+		  </mfrac>
+		</mrow>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>ListLinePlot</mi>
+	  <mo>[</mo>
+	  <mi>res</mi>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_56.gif" alt="ch_4_56.gif" width="450" height="284" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Well what do we have here! It worked! It is the ugliest way to do things because it is not functional, but it got the job done. We will refine this somehow.
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>MapIndexed</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mfrac>
+		<mrow>
+		  <mi>FoldList</mi>
+		  <mo>[</mo>
+		  <mrow>
+		    <mi>Plus</mi>
+		    <mo>,</mo>
+		    <mn>0</mn>
+		    <mo>,</mo>
+		    <mrow>
+		      <mi>fewtosses</mi>
+		      <mo>[</mo>
+		      <mrow>
+			<mo>[</mo>
+			<mrow>
+			  <mtext>;;</mtext>
+			  <mrow>
+			    <mi>First</mi>
+			    <mo>[</mo>
+			    <mi>#2</mi>
+			    <mo>]</mo>
+			  </mrow>
+			</mrow>
+			<mo>]</mo>
+		      </mrow>
+		      <mo>]</mo>
+		    </mrow>
+		  </mrow>
+		  <mo>]</mo>
+		</mrow>
+		<mrow>
+		  <mi>First</mi>
+		  <mo>[</mo>
+		  <mi>#2</mi>
+		  <mo>]</mo>
+		</mrow>
+	      </mfrac>
+	      <mo>&amp;</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mi>fewtosses</mi>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mo>{</mo>
+	  <mrow>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>2</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>3</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>3</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>3</mn>
+		</mfrac>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>4</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>2</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>2</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>3</mn>
+		  <mn>4</mn>
+		</mfrac>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>5</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>5</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>5</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>3</mn>
+		  <mn>5</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>4</mn>
+		  <mn>5</mn>
+		</mfrac>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>6</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>3</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>3</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>2</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>3</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>3</mn>
+		</mfrac>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>7</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>7</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>7</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>3</mn>
+		  <mn>7</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>4</mn>
+		  <mn>7</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>4</mn>
+		  <mn>7</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>5</mn>
+		  <mn>7</mn>
+		</mfrac>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>8</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>4</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>4</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>3</mn>
+		  <mn>8</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>2</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>2</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>5</mn>
+		  <mn>8</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>5</mn>
+		  <mn>8</mn>
+		</mfrac>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>9</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>9</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>9</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>3</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>4</mn>
+		  <mn>9</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>4</mn>
+		  <mn>9</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>5</mn>
+		  <mn>9</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>5</mn>
+		  <mn>9</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>5</mn>
+		  <mn>9</mn>
+		</mfrac>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>10</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>5</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>5</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>3</mn>
+		  <mn>10</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>5</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>2</mn>
+		  <mn>5</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>2</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>2</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>2</mn>
+		</mfrac>
+		<mo>,</mo>
+		<mfrac>
+		  <mn>1</mn>
+		  <mn>2</mn>
+		</mfrac>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>}</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>MapIndexed</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mrow>
+		<mi>List</mi>
+		<mo>[</mo>
+		<mrow>
+		  <mi>#1</mi>
+		  <mo>,</mo>
+		  <mrow>
+		    <mi>First</mi>
+		    <mo>@</mo>
+		    <mi>#2</mi>
+		  </mrow>
+		</mrow>
+		<mo>]</mo>
+	      </mrow>
+	      <mo>&amp;</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mi>fewtosses</mi>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mo>{</mo>
+	  <mrow>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>1</mn>
+		<mo>,</mo>
+		<mn>1</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>1</mn>
+		<mo>,</mo>
+		<mn>2</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mn>3</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>1</mn>
+		<mo>,</mo>
+		<mn>4</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>1</mn>
+		<mo>,</mo>
+		<mn>5</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mn>6</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>1</mn>
+		<mo>,</mo>
+		<mn>7</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mn>8</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mn>9</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mo>{</mo>
+	      <mrow>
+		<mn>0</mn>
+		<mo>,</mo>
+		<mn>10</mn>
+	      </mrow>
+	      <mo>}</mo>
+	    </mrow>
+	  </mrow>
+	  <mo>}</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mrow>
+	    <mi>MapIndexed</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mrow>
+		<mfrac>
+		  <mrow>
+		    <mi>Total</mi>
+		    <mo>[</mo>
+		    <mrow>
+		      <mi>tosses</mi>
+		      <mo>[</mo>
+		      <mrow>
+			<mo>[</mo>
+			<mrow>
+			  <mtext>;;</mtext>
+			  <mrow>
+			    <mi>First</mi>
+			    <mo>@</mo>
+			    <mi>#2</mi>
+			  </mrow>
+			</mrow>
+			<mo>]</mo>
+		      </mrow>
+		      <mo>]</mo>
+		    </mrow>
+		    <mo>]</mo>
+		  </mrow>
+		  <mrow>
+		    <mi>First</mi>
+		    <mo>@</mo>
+		    <mi>#2</mi>
+		  </mrow>
+		</mfrac>
+		<mo>&amp;</mo>
+	      </mrow>
+	      <mo>,</mo>
+	      <mi>tosses</mi>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mo>;</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>ListLinePlot</mi>
+	  <mo>[</mo>
+	  <mi>%</mi>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_57.gif" alt="ch_4_57.gif" width="450" height="284" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      There we go, it is now functional - nice and neat.<br /><br />Now we need to bias the coin such that the probability of Heads is 0.8.<br /><br />There&rsquo;s <span class="InlineCodeInline"><span>BernoulliDistribution</span></span> which &ldquo;represents a Bernoulli distribution with probability parameter <span class="script">p</span>. Also known as the coin toss distribution or Bernoulli trial&rdquo;. Since it literally says &ldquo;coin toss&rdquo; in there, we should try it out.
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>RandomVariate</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>BernoulliDistribution</mi>
+	      <mo>[</mo>
+	      <mn>0.8</mn>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mn>10</mn>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mo>{</mo>
+	  <mrow>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>0</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	    <mo>,</mo>
+	    <mn>1</mn>
+	  </mrow>
+	  <mo>}</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_58.gif" alt="ch_4_58.gif" width="593" height="124" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>0.746</mn>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>0.254</mn>
+      </math>
+    </p>
+
+    <p class="Text">
+      Yes! Looks good! Let&rsquo;s plot!
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>ListLinePlot</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mrow>
+	      <mi>MapIndexed</mi>
+	      <mo>[</mo>
+	      <mrow>
+		<mrow>
+		  <mfrac>
+		    <mrow>
+		      <mi>Total</mi>
+		      <mo>[</mo>
+		      <mrow>
+			<mi>biasedtosses</mi>
+			<mo>[</mo>
+			<mrow>
+			  <mo>[</mo>
+			  <mrow>
+			    <mtext>;;</mtext>
+			    <mrow>
+			      <mi>First</mi>
+			      <mo>@</mo>
+			      <mi>#2</mi>
+			    </mrow>
+			  </mrow>
+			  <mo>]</mo>
+			</mrow>
+			<mo>]</mo>
+		      </mrow>
+		      <mo>]</mo>
+		    </mrow>
+		    <mrow>
+		      <mi>First</mi>
+		      <mo>@</mo>
+		      <mi>#2</mi>
+		    </mrow>
+		  </mfrac>
+		  <mo>&amp;</mo>
+		</mrow>
+		<mo>,</mo>
+		<mi>biasedtosses</mi>
+	      </mrow>
+	      <mo>]</mo>
+	    </mrow>
+	    <mo>,</mo>
+	    <mrow>
+	      <mi>PlotRange</mi>
+	      <mo>-&gt;</mo>
+	      <mi>All</mi>
+	    </mrow>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_59.gif" alt="ch_4_59.gif" width="450" height="272" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      And thus concludes the exercise!
+    </p>
+
+
+
+    <p class="Subsection">
+      Exercise 4.4
+    </p>
+
+
+
+    <p class="Text">
+      Consider a spinner with a [0,1] scale on its circumference. Suppose that the spinner is slanted or magnetized or bent in some way such that it is biased, and its probability density function is <span class="script">p</span>(<span class="script">x</span>) = 6<span class="script">x</span>(1-<span class="script">x</span>) over the interval <span class="script">x</span> &isin; [0,1].
+    </p>
+
+
+
+    <p class="ItemNumbered">
+      Adapt the program <span class="InlineCodeInline"><span>IntegralOfDensity.R</span></span> to plot this density function and approximate its integral. Comment your code. Be careful to consider values of <span class="script">x</span> only in the interval [0,1]. <span style='font-style: italic;'>Hint: </span>You can omit the first couple of lines regarding <span class="InlineCodeInline"><span>meanval</span></span> and <span class="InlineCodeInline"><span>sdval</span></span>, because those parameter values pertain only to the normal distribution. Then set <span class="InlineCodeInline"><span>xlow=0</span></span> and <span class="InlineCodeInline"><span>xhigh=1</span></span>, and set <span class="InlineCodeInline"><span>dx</span></span> to some small value.
+    </p>
+
+
+
+    <p class="ItemNumbered">
+      Derive the exact integral using calculus.
+    </p>
+
+
+
+    <p class="ItemNumbered">
+      Does this function satisfy equation 4.3?
+    </p>
+
+
+
+    <p class="ItemNumbered">
+      From inspecting the graph, what is the maximal values of <span class="script">p</span>(<span class="script">x</span>)?
+    </p>
+
+
+
+    <p class="Text">
+      Here is the R code from the file:
+    </p>
+
+
+
+    <p class="ExternalLanguage">
+      source(&quot;DBDA2E-utilities.R&quot;)<br /># Graph of normal probability density function, with comb of intervals.<br />meanval = 0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Specify mean of distribution.<br />sdval = 0.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Specify standard deviation of distribution.<br />xlow&nbsp;&nbsp;= meanval - 3.5*sdval # Specify low end of x-axis.<br />xhigh = meanval + 3.5*sdval # Specify high end of x-axis.<br />dx = sdval/10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Specify interval width on x-axis<br /># Specify comb of points along the x axis:<br />x = seq( from = xlow , to = xhigh , by = dx )<br /># Compute y values, i.e., probability density at each value of x:<br />y = ( 1/(sdval*sqrt(2*pi)) ) * exp( -.5 * ((x-meanval)/sdval)^2 )<br /># Plot the function. &quot;plot&quot; draws the intervals. &quot;lines&quot; draws the bell curve.<br />openGraph(width=7,height=5)<br />plot( x , y , type=&quot;h&quot; , lwd=1 , cex.axis=1.5, xlab=&quot;x&quot; , ylab=&quot;p(x)&quot;, cex.lab=1.5, main=&quot;Normal Probability Density&quot; , cex.main=1.5 )<br />lines( x , y , lwd=3 ,&nbsp;&nbsp;col=&quot;skyblue&quot; )<br /># Approximate the integral as the sum of width * height for each interval.<br />area = sum( dx * y )<br /># Display info in the graph.<br />text( meanval-sdval , .9*max(y) , bquote( paste(mu ,&quot; = &quot; ,.(meanval)) ), adj=c(1,.5) , cex=1.5 )<br />text( meanval-sdval , .75*max(y) , bquote( paste(sigma ,&quot; = &quot; ,.(sdval)) ), adj=c(1,.5) , cex=1.5 )<br />text( meanval+sdval , .9*max(y) , bquote( paste(Delta , &quot;x = &quot; ,.(dx)) ), adj=c(0,.5) , cex=1.5 )<br />text( meanval+sdval , .75*max(y) ,bquote( sum({},x,{}) *&quot; &quot;* Delta *&quot;x p(x) = &quot;* .(signif(area,3)) ) ,adj=c(0,.5) , cex=1.5 )<br /># Save the plot to an EPS file.<br />saveGraph( file = &quot;IntegralOfDensity&quot; , type=&quot;eps&quot; )
+    </p>
+
+
+
+    <p class="Text">
+      That&rsquo;s <span style='font-style: italic;'>a lot</span> of code just to display graphs. Disregard those lines, and we are left with a few important lines:<br /><br /># Specify comb of points along the x axis:<br />x = seq( from = xlow , to = xhigh , by = dx )<br /><br /># Compute y values, i.e., probability density at each value of x:<br />y = ( 1/(sdval*sqrt(2*pi)) ) * exp( -.5 * ((x-meanval)/sdval)^2 )<br /><br /># Approximate the integral as the sum of width * height for each interval.<br />area = sum( dx * y )
+    </p>
+
+
+
+    <p class="Text">
+      Fairly straight forward. Initially I thought we are going to use <span class="InlineCodeInline"><span>NormalDistribution</span></span> function, but no. This is just calculating values of &ldquo;probability density&rdquo; in a range (0 to 1) with some interval and plots the values. Can we find some excuse to use <span class="InlineCodeInline"><span>NormalDistribution</span></span>?<br /><br />Anyway, here we go:
+    </p>
+
+
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_60.gif" alt="ch_4_60.gif" width="364" height="178" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_61.gif" alt="ch_4_61.gif" width="450" height="285" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>area</mi>
+	  <mo>=</mo>
+	  <mrow>
+	    <mi>Total</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mi mathvariant='script'>y</mi>
+	      <mo>*</mo>
+	      <mi>&delta;</mi>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>0.9996</mn>
+      </math>
+    </p>
+
+    <p class="Text">
+      I am curious how the plot looked liked with the original equation.
+    </p>
+
+
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_62.gif" alt="ch_4_62.gif" width="681" height="201" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_63.gif" alt="ch_4_63.gif" width="450" height="292" style="vertical-align:middle" />
+    </p>
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mtext> </mtext>
+	  <mrow>
+	    <msubsup>
+	      <mo>&Integral;</mo>
+	      <mn>0</mn>
+	      <mn>1</mn>
+	    </msubsup>
+	    <mrow>
+	      <mn>6</mn>
+	      <mo>&InvisibleTimes;</mo>
+	      <mi>x</mi>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mo>(</mo>
+		<mrow>
+		  <mn>1</mn>
+		  <mo>-</mo>
+		  <mi>x</mi>
+		</mrow>
+		<mo>)</mo>
+	      </mrow>
+	      <mo>&InvisibleTimes;</mo>
+	      <mrow>
+		<mo>&DifferentialD;</mo>
+		<mi>x</mi>
+	      </mrow>
+	    </mrow>
+	  </mrow>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>1</mn>
+      </math>
+    </p>
+
+    <p class="CellLabel">
+      In[296]:=
+    </p>
+
+
+
+    <p class="WolframAlphaLong">
+      integrate 6x(1-x) from 0 to 1
+    </p>
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Max</mi>
+	  <mo>[</mo>
+	  <mi mathvariant='script'>y</mi>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>1.5</mn>
+      </math>
+    </p>
+
+    <p class="Text">
+      Thus concludes the exercise.
+    </p>
+
+
+
+    <p class="Text">
+      However, there&rsquo;s something more we can try. That is to see if we can find more <span style='font-style: italic;'>Mathematica-like</span> ways of doing this.<br />Thinking about it, we are given a <span style='font-style: italic;'>probability distribution function</span> 6<span class="script">x</span>(1-<span class="script">x</span>). And all we want is to see how it will behave for different values of the variable <span class="script">x</span>. There is one potential function we can try.
+    </p>
+
+
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_65.gif" alt="ch_4_65.gif" width="469" height="48" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_66.gif" alt="ch_4_66.gif" width="450" height="277" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      Ah! Look what we got here! Perfect.
+    </p>
+
+
+
+    <p class="Input">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mrow>
+	  <mi>Max</mi>
+	  <mo>[</mo>
+	  <mrow>
+	    <mi>PDF</mi>
+	    <mo>[</mo>
+	    <mrow>
+	      <mi mathvariant='script'>D</mi>
+	      <mo>,</mo>
+	      <mi>x</mi>
+	    </mrow>
+	    <mo>]</mo>
+	  </mrow>
+	  <mo>]</mo>
+	</mrow>
+      </math>
+    </p>
+
+    <table class='Output'>
+      <tr style='vertical-align: baseline;'>
+	<td style='text-align: left;'><span>&#62305;</span></td>
+	<td style='text-align: left;'><table class='Inline'>
+	    <tr style='vertical-align: baseline;'>
+	      <td style='text-align: left;'><span>6 (1-x) x</span></td>
+	      <td style='text-align: left;'><span>0&lt;x&lt;1</span></td>
+	    </tr>
+	    <tr style='vertical-align: baseline;'>
+	      <td style='text-align: left;'><span>0</span></td>
+	      <td style='text-align: left;'><span>True</span></td>
+	    </tr>
+	  </table>
+
+	</td>
+      </tr>
+    </table>
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_67.gif" alt="ch_4_67.gif" width="631" height="76" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <img src="/assets/images/mathematica/dog_book/ch_4_68.gif" alt="ch_4_68.gif" width="450" height="282" style="vertical-align:middle" />
+    </p>
+
+    <p class="Text">
+      To get area under the curve we do CDF[a] - CDF[b]
+    </p>
+
+
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_69.gif" alt="ch_4_69.gif" width="469" height="48" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>1</mn>
+      </math>
+    </p>
+
+    <p class="Input">
+      <img src="/assets/images/mathematica/dog_book/ch_4_70.gif" alt="ch_4_70.gif" width="631" height="76" style="vertical-align:middle" />
+    </p>
+
+    <p class="Output">
+      <math xmlns='http://www.w3.org/1998/Math/MathML'>
+	<mn>0.999534741841929</mn>
+      </math>
+    </p>
+
+    <p class="Text">
+      As you can observe, this approach is <span style='font-style: italic;'>much</span> better. Though it may not be as easy to understand what&rsquo;s really going on under the hood, it is cleaner once you already have understood what&rsquo;s going on. For example, if we were to start directly with <span class="InlineCodeInline"><span>ProbabilityDistribution</span></span>, we would not know how 6<span class="script">x</span>(1-<span class="script">x</span>) is executed and plotted.
+    </p>
+
+
+
+
+
+
+    <div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+      <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+	<span style="color:#555555">Created with the Wolfram Language</span> 
+      </a>
+    </div>
+  </body>
+
+</html>

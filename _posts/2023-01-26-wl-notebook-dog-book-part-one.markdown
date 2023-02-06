@@ -10,10 +10,6 @@ Instead of using R, I am going to use Mathematica. Below is a Wolfram Notebook, 
 
 Link: [Notebook on notebookarchive.org](https://notebookarchive.org/basic-statistics-exploration-from-doing-bayesian-data-analysis--2023-01-8u3op2k/)
 
-<script crossorigin src="https://unpkg.com/wolfram-notebook-embedder@0.3/dist/wolfram-notebook-embedder.min.js"></script>
+Download link: [Download]({{ site_url }}/assets/wl_notebooks/ch_4.nb)
 
-<div id="notebookContainer"></div>
-
-<script>
-var embedding = WolframNotebookEmbedder.embed('https://www.wolframcloud.com/objects/nbarch/2023/01/2023-01-8u3op2k/2023-01-8u3op2k.nb', document.getElementById('notebookContainer'));
-</script>
+<iframe src="{% post_url 2023-02-01-wl-notebook-dog-book-part-one-notebook-exclude %}" width="100%" height="600"></iframe>
