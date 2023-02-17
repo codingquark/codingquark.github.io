@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  ch_6
+ </title>
+ <link href="/assets/css/mathematica/dog_book/ch_6.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Title">
+ Reproducing an example
+</p>
+
+
+
+<p class="Section">
+ The&nbsp;&nbsp;beta distribution
+</p>
+
+
+
+<p class="Text">
+ <span><a href="https://en.wikipedia.org/wiki/Beta_distribution"><span class="HyperlinkInline">Beta distribution function</span></a></span> is &ldquo;conjugate prior&rdquo; for Bernoulli distribution (and others). It means that the &ldquo;form&rdquo; of posterior distribution is the same as the prior distribution.<br /><br />The Bernoulli distribution:<br /><br /><span class="script">p</span> (<span class="script">y</span> | &theta;) = <span><span><img src="/assets/images/mathematica/dog_book/ch_6_1.png" alt="ch_6_1.png" width="73" height="20" style="vertical-align:middle" /></span></span><br /><br />This &ldquo;feature&rdquo; of beta distribution allows us to keep using the same methods over and over because the posterior distribution&rsquo;s form does not change. We can apply Bayesian steps in repetition.
+</p>
+
+
+
+<p class="Text">
+ There is a potential matter of confusion here:<br />Beta Distribution is different from the Beta function.
+</p>
+
+
+
+<p class="Text">
+ Following is the beta <span style='font-style: italic;'>distribution:</span><br /><span class="script">p</span> (&theta; | <span class="script">a</span>, <span class="script">b</span>) = <span style='font-style: italic;'>beta</span>(&theta; | <span class="script">a</span>, <span class="script">b</span>)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= <span><span><img src="/assets/images/mathematica/dog_book/ch_6_2.png" alt="ch_6_2.png" width="95" height="42" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Text">
+ Where,<br /><br />B(<span class="script">a</span>, <span class="script">b</span>) = <span><span><img src="/assets/images/mathematica/dog_book/ch_6_3.png" alt="ch_6_3.png" width="128" height="34" style="vertical-align:middle" /></span></span><br /><br />is a&nbsp;&nbsp;<span style='font-style: italic;'>normalizing constant </span>or beta <span style='font-style: italic;'>function.</span>
+</p>
+
+
+
+<p class="Text">
+ One of the most useful figures to understand what a beta distribution does, is Figure 6.1. It shows how the values of &alpha; and &beta; change relative to each other. Let&rsquo;s try to reproduce it.<br /><br />Mathematica, of course, has the functions: <span class="InlineCodeInline"><span>BetaDistribution</span></span> and <span class="InlineCodeInline"><span>Beta</span></span>.
+</p>
+
+
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_4.png" alt="ch_6_4.png" width="463" height="38" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_5.gif" alt="ch_6_5.gif" width="360" height="222" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ The image above has too much information. Let&rsquo;s make it <span style='font-style: italic;'>exactly</span> like the Figure 6.1:
+</p>
+
+
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_6.png" alt="ch_6_6.png" width="563" height="65" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_7.gif" alt="Graphics:&amp;alpha;=0.1, &amp;beta;=0.1" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_8.gif" alt="Graphics:&amp;alpha;=0.1, &amp;beta;=1" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_9.gif" alt="Graphics:&amp;alpha;=0.1, &amp;beta;=2" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_10.gif" alt="Graphics:&amp;alpha;=0.1, &amp;beta;=3" width="360" height="239" style="vertical-align:middle" /></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_11.gif" alt="Graphics:&amp;alpha;=1, &amp;beta;=0.1" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_12.gif" alt="Graphics:&amp;alpha;=1, &amp;beta;=1" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_13.gif" alt="Graphics:&amp;alpha;=1, &amp;beta;=2" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_14.gif" alt="Graphics:&amp;alpha;=1, &amp;beta;=3" width="360" height="239" style="vertical-align:middle" /></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_15.gif" alt="Graphics:&amp;alpha;=2, &amp;beta;=0.1" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_16.gif" alt="Graphics:&amp;alpha;=2, &amp;beta;=1" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_17.gif" alt="Graphics:&amp;alpha;=2, &amp;beta;=2" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_18.gif" alt="Graphics:&amp;alpha;=2, &amp;beta;=3" width="360" height="239" style="vertical-align:middle" /></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_19.gif" alt="Graphics:&amp;alpha;=3, &amp;beta;=0.1" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_20.gif" alt="Graphics:&amp;alpha;=3, &amp;beta;=1" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_21.gif" alt="Graphics:&amp;alpha;=3, &amp;beta;=2" width="360" height="239" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="/assets/images/mathematica/dog_book/ch_6_22.gif" alt="Graphics:&amp;alpha;=3, &amp;beta;=3" width="360" height="239" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<p class="Title">
+ Exercises
+</p>
+
+
+
+<p class="Section">
+ Exercise 6.1
+</p>
+
+
+
+<p class="Text">
+ (A) Start with a prior distribution that expresses some uncertainty that a coin is fair: beta(&theta;|4,4). Flip the coin once; suppose we get a head. What is the posterior distribution?<br /><br />(B) Use the posterior from the previous flip as the prior for the next flip. Suppose we flip again and get a head. Now what is the new posterior?<br /><br />(C) Using that posterior as the prior for the next flip, flip a third time and get a tail. Now what is the new posterior?<br /><br />(D) Do the same three updates, but in the order T, H, H instead&nbsp;&nbsp;of H, H, T. Is the final posterior distribution the same for both orderings of the flip results?
+</p>
+
+
+
+<p class="Subsection">
+ Exploration
+</p>
+
+
+
+<p class="Text">
+ For (A) (B) and (C), we just have to increase &alpha; and &beta; values as flip&rsquo;s results come in. Plotting the results is simple, the same as shown in &ldquo;Reproducing an example&rdquo; section above. 
+</p>
+
+
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_23.png" alt="ch_6_23.png" width="496" height="79" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_24.gif" alt="ch_6_24.gif" width="773" height="114" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Now for (D), the approach is exactly the same, the order of updating &alpha; and &beta; changes:
+</p>
+
+
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_25.png" alt="ch_6_25.png" width="496" height="79" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_26.gif" alt="ch_6_26.gif" width="773" height="116" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Resulting distributions are the same, showing data order invariance.
+</p>
+
+
+
+<p class="Section">
+ Exercise 6.2
+</p>
+
+
+
+<p class="Text">
+ Suppose an election is approaching, and you are interested in knowing whether the general population prefers candidate A or candidate B. There is a just-published poll in the newspaper, which states that of 100 randomly sampled people, 58 preferred candidate A and the remainder preferred candidate B.<br /><br />(A) Suppose that before the newspaper poll, your prior belief was a uniform distribution. What is the 95% HDI on your beliefs after learning of the newspaper poll results?<br /><br />(B) You want to conduct a follow-up poll to narrow down your estimate of the population&rsquo;s preference. In your follow-up poll, you randomly sample 100 other people and find that 57 prefer candidate A and the remainder prefer candidate B. Assuming peoples&rsquo; opinions have not changed between polls, what is the 95% HDI on the posterior?
+</p>
+
+
+
+<p class="Subsection">
+ Exploration
+</p>
+
+
+
+<p class="Text">
+ Since our prior beliefs about the matter is a uniform distribution, we don&rsquo;t have to come up with our own values of &alpha; and &beta;.<br />Let&rsquo; s plot the distribution of the original data to see what it looks like:
+</p>
+
+
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_27.png" alt="ch_6_27.png" width="527" height="38" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_28.gif" alt="ch_6_28.gif" width="360" height="227" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Let&rsquo;s see where the peak lies, which tells us &ldquo;Mode&rdquo;:
+</p>
+
+
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_29.png" alt="ch_6_29.png" width="451" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_30.png" alt="ch_6_30.png" width="183" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ To calculate 95% HDI, some finicky things are involved. They are finicky to me at least:
+</p>
+
+
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_31.png" alt="ch_6_31.png" width="582" height="56" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_32.png" alt="ch_6_32.png" width="150" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Thus, 95% HDI lies within the range of 0.482444 - 0.674524.
+</p>
+
+
+
+<p class="Text">
+ Next, we <span style='font-style: italic;'>update</span> our beliefs given new data we collect ourselves. The results of (A) will become our prior distribution.<br />We replicate the same process, but now with second set of samples included:
+</p>
+
+
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_33.gif" alt="ch_6_33.gif" width="403" height="38" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_34.gif" alt="ch_6_34.gif" width="360" height="229" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_35.gif" alt="ch_6_35.gif" width="293" height="38" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_36.png" alt="ch_6_36.png" width="183" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ The mode has changed from 0.5816 to 0.5757.
+</p>
+
+
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_37.png" alt="ch_6_37.png" width="588" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_38.png" alt="ch_6_38.png" width="150" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Notice that the initial 95% HDI was {0.4824, 0.6745}, which changed to {0.5060, 0.6425} - it got narrower:
+</p>
+
+
+
+<p class="Input">
+ <img src="/assets/images/mathematica/dog_book/ch_6_39.gif" alt="ch_6_39.gif" width="105" height="38" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_40.png" alt="ch_6_40.png" width="46" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="/assets/images/mathematica/dog_book/ch_6_41.png" alt="ch_6_41.png" width="46" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Section">
+ Exercises 6.3, 6.4, 6.5
+</p>
+
+
+
+<p class="Text">
+ These exercises are practically the same as 6.2. As results, they&rsquo;re interesting. But implementation in Mathematica is just plugging in values of &alpha; and &beta; and seeing the plots.<br />IOW, I am lazy.
+</p>
+
+
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>
