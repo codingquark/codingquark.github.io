@@ -4,3 +4,5 @@ _site
 TAGS
 _posts/.dir-locals.el
 .direnv
+.envrc
+.ruby-version
