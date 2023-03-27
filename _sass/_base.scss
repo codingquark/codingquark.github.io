@@ -110,15 +110,12 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
     margin-top: $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
-    font-family: Sans-Serif;
-    line-height: $base-line-height - 0.2;
+    font-family: $base-font-family;
     font-size: $base-font-size;
-    letter-spacing: 1px;
 
     > :last-child {
         margin-bottom: 0;
@@ -133,6 +130,8 @@ blockquote {
 pre,
 code {
     font-size: 15px;
+    font-family: $monospace-font-family;
+    font-weight: $monospace-font-weight;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;

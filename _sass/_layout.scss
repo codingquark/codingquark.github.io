@@ -36,7 +36,7 @@
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $text-color;
         }
     }
 }
@@ -52,6 +52,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+	font-weight: 500;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -209,6 +210,7 @@
 .post-link {
     display: block;
     font-size: 24px;
+    font-weight: 500;
 }
 
 
@@ -221,9 +223,10 @@
 }
 
 .post-title {
-    font-size: 38px;
+    font-size: 34px;
     letter-spacing: -0.5px;
     line-height: 1;
+    font-weight: 700;
 
     @include media-query($on-laptop) {
         font-size: 40px;
@@ -231,12 +234,11 @@
 }
 
 .post-content {
-    margin-top: $spacing-unit / 1.5;
     margin-bottom: $spacing-unit - $spacing-unit;
 
     h1 {
         font-size: 32px;
-	margin-top: $spacing-unit / 1.5;
+	font-weight: $post-content-header-weight;
 	margin-bottom: $spacing-unit - $spacing-unit;
 
         @include media-query($on-laptop) {
@@ -246,7 +248,7 @@
 
     h2 {
         font-size: 26px;
-	margin-top: $spacing-unit / 1.5;
+	font-weight: $post-content-header-weight;
 	margin-bottom: $spacing-unit - $spacing-unit;
 
         @include media-query($on-laptop) {
@@ -256,7 +258,7 @@
 
     h3 {
         font-size: 20px;
-	margin-top: $spacing-unit / 1.5;
+	font-weight: $post-content-header-weight;
 	margin-bottom: $spacing-unit - $spacing-unit;
 
         @include media-query($on-laptop) {

@@ -3,31 +3,10 @@
 ---
 @charset "utf-8";
 
-/* hahmlet-regular - latin */
 @font-face {
   font-family: 'Hahmlet';
   font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/hahmlet-v1-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../assets/fonts/hahmlet-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/hahmlet-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/hahmlet-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/hahmlet-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/hahmlet-v1-latin-regular.svg#Hahmlet') format('svg'); /* Legacy iOS */
-}
-/* hahmlet-700 - latin */
-@font-face {
-  font-family: 'Hahmlet';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../assets/fonts/hahmlet-v1-latin-700.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../assets/fonts/hahmlet-v1-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/hahmlet-v1-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/hahmlet-v1-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/hahmlet-v1-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/hahmlet-v1-latin-700.svg#Hahmlet') format('svg'); /* Legacy iOS */
+  src: url('../assets/fonts/Hahmlet/Hahmlet-VariableFont_wght.ttf');
 }
 
 /* indie-flower-regular - latin */
@@ -44,12 +23,19 @@
        url('../assets/fonts/indie-flower-v12-latin-regular.svg#IndieFlower') format('svg'); /* Legacy iOS */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
 // Our variables
-$base-font-family: "Hahmlet", serif, Arial;
+$base-font-family: 'Hahmlet', Serif;
 $base-font-size:   16px;
-$base-font-weight: 400;
+$base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+
+$monospace-font-family: 'Roboto Mono';
+$monospace-font-weight: 300;
+
+$post-content-header-weight: 500;
 
 $spacing-unit:     30px;
 
