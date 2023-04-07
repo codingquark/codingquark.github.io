@@ -226,10 +226,10 @@
     font-size: 34px;
     letter-spacing: -0.5px;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 600;
 
     @include media-query($on-laptop) {
-        font-size: 40px;
+        font-size: 34px;
     }
 }
 
@@ -240,6 +240,7 @@
         font-size: 32px;
 	font-weight: $post-content-header-weight;
 	margin-bottom: $spacing-unit - $spacing-unit;
+	font-feature-settings: 'smcp' 1;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -264,5 +265,20 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+
+    a {
+	color: $text-color;
+	text-decoration: none;
+	font-feature-settings: 'smcp' 1;
+
+	&:visited {
+            color: $text-color;
+	}
+
+	&:hover {
+            color: $text-color;
+            text-decoration: underline;
+	}
     }
 }
