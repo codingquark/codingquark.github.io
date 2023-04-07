@@ -4,10 +4,32 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: 'Hahmlet';
-  font-style: normal;
-  src: url('../assets/fonts/Hahmlet/Hahmlet-VariableFont_wght.ttf');
+    font-family: 'Hahmlet';
+    font-style: normal;
+    src: url('../assets/fonts/Hahmlet/Hahmlet-VariableFont_wght.ttf');
 }
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    src: url('../assets/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: italic;
+    src: url('../assets/fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    src: url('../assets/fonts/OpenSans/OpenSans-VariableFont_wdth,wght.ttf');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    src: url('../assets/fonts/OpenSans/OpenSans-Italic-VariableFont_wdth,wght.ttf');
+}
+
 
 /* indie-flower-regular - latin */
 @font-face {
@@ -23,11 +45,11 @@
        url('../assets/fonts/indie-flower-v12-latin-regular.svg#IndieFlower') format('svg'); /* Legacy iOS */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300');
 
 // Our variables
-$base-font-family: 'Hahmlet', Serif;
-$base-font-size:   20px;
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -35,7 +57,7 @@ $base-line-height: 1.5;
 $monospace-font-family: 'Roboto Mono';
 $monospace-font-weight: 300;
 
-$post-content-header-weight: 500;
+$post-content-header-weight: 400;
 
 $spacing-unit:     30px;
 

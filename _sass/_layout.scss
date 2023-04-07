@@ -194,6 +194,7 @@
 }
 
 .post-list {
+    font-family: 'EB Garamond';
     margin-left: 0;
     list-style: none;
 
@@ -203,6 +204,8 @@
 }
 
 .post-meta {
+    font-family: 'EB Garamond';
+    font-feature-settings: 'onum' 1;
     font-size: $small-font-size;
     color: $grey-color;
 }
@@ -223,10 +226,11 @@
 }
 
 .post-title {
+    font-family: 'EB Garamond';
     font-size: 34px;
-    letter-spacing: -0.5px;
+    font-feature-settings: 'smcp' 1;
+    font-weight: 500;
     line-height: 1;
-    font-weight: 600;
 
     @include media-query($on-laptop) {
         font-size: 34px;
@@ -237,20 +241,32 @@
     margin-bottom: $spacing-unit - $spacing-unit;
 
     h1 {
+	font-family: 'EB Garamond';
         font-size: 32px;
 	font-weight: $post-content-header-weight;
-	margin-bottom: $spacing-unit - $spacing-unit;
 	font-feature-settings: 'smcp' 1;
+	margin-top: $spacing-unit - 10;
+	margin-bottom: $spacing-unit - $spacing-unit;
 
         @include media-query($on-laptop) {
             font-size: 28px;
         }
     }
+    h1:after {
+	content:' ';
+	display:block;
+	width: 80px;
+	border:2px solid $grey-color-light;
+	margin-bottom: $spacing-unit - 15;
+    }
 
     h2 {
+	font-family: 'EB Garamond';
         font-size: 26px;
 	font-weight: $post-content-header-weight;
-	margin-bottom: $spacing-unit - $spacing-unit;
+	font-feature-settings: 'smcp' 1;
+	margin-top: $spacing-unit - 15;
+	margin-bottom: $spacing-unit - 20;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -258,27 +274,16 @@
     }
 
     h3 {
+	font-family: 'EB Garamond';
         font-size: 20px;
 	font-weight: $post-content-header-weight;
+	font-feature-settings: 'smcp' 1;
+	margin-top: $spacing-unit - 15;
+	margin-bottom: $spacing-unit - 20;
 	margin-bottom: $spacing-unit - $spacing-unit;
 
         @include media-query($on-laptop) {
             font-size: 18px;
         }
-    }
-
-    a {
-	color: $text-color;
-	text-decoration: none;
-	font-feature-settings: 'smcp' 1;
-
-	&:visited {
-            color: $text-color;
-	}
-
-	&:hover {
-            color: $text-color;
-            text-decoration: underline;
-	}
     }
 }
