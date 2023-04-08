@@ -82,15 +82,15 @@ With just three keystrokes, I can get a new journal file for the day using simpl
 (defun cq/create-denote-journal-entry ()
   (interactive)
   (let* ((date (org-read-date))
-		 (time (org-time-string-to-time date))
-		 (title (format-time-string "%A %d %B %Y" time))
-		 (initial (denote-sluggify title))
-		 (target (read-file-name "Select note: " (denote-directory) nil nil initial
-								 (lambda (f)
-								   (or (denote-file-has-identifier-p f)
-				   (file-directory-p f))))))
-	(if (file-exists-p target)
-		(find-file target)
+         (time (org-time-string-to-time date))
+         (title (format-time-string "%A %d %B %Y" time))
+         (initial (denote-sluggify title))
+         (target (read-file-name "Select note: " (denote-directory) nil nil initial
+                                 (lambda (f)
+                                   (or (denote-file-has-identifier-p f)
+                   (file-directory-p f))))))
+    (if (file-exists-p target)
+        (find-file target)
   (denote title '("journal") denote-file-type nil date))))
 ```
 
@@ -117,11 +117,11 @@ Another feature I’ve added is to look up words in dictionary and thesaurus. Wi
 (defun cq/search-word ()
   (interactive)
   (let ((word (if (use-region-p)
-				  (buffer-substring-no-properties (region-beginning) (region-end))
-				(read-string "Word lookup: "))))
-	(if (eq system-type 'darwin)
-		(shell-command (format "open dict://%s" (shell-quote-argument word)))
-	  (eww (concat "https://en.wiktionary.org/wiki/" word) 4))))
+                  (buffer-substring-no-properties (region-beginning) (region-end))
+                (read-string "Word lookup: "))))
+    (if (eq system-type 'darwin)
+        (shell-command (format "open dict://%s" (shell-quote-argument word)))
+      (eww (concat "https://en.wiktionary.org/wiki/" word) 4))))
 ```
 
 # Fineprint
