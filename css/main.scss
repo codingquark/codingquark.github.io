@@ -77,7 +77,7 @@
        url('../assets/fonts/indie-flower-v12-latin-regular.svg#IndieFlower') format('svg'); /* Legacy iOS */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap');
 
 // Our variables
 $base-font-family: 'Charter', sans-serif;
@@ -86,8 +86,8 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.6;
 
-$monospace-font-family: 'Roboto Mono';
-$monospace-font-weight: 300;
+$monospace-font-family: 'IBM Plex Mono';
+$monospace-font-weight: 400;
 
 $post-content-header-weight: 400;
 
