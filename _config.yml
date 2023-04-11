@@ -24,6 +24,10 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+feed:
+  categories:
+    - emacs
+
 assets:
    sources:
        - assets/fonts
