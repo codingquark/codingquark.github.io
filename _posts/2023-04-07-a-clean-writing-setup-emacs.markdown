@@ -2,6 +2,7 @@
 title: A Clean Writing Environment
 layout: post
 date: 2023-04-07 12:00:00 +0530
+category: emacs
 ---
 I have simple preferences for writing:
 
