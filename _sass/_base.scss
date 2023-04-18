@@ -8,25 +8,26 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
-/**
- * Basic styling
- */
-body {
+:root {
     font-family: $base-font-family;
     font-weight: $base-font-weight;
     font-size: $base-font-size;
     line-height: $base-line-height;
     letter-spacing: 0px;
-    color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1,"liga" 1;
     font-kerning: normal;
+}
+
+/**
+ * Basic styling
+ */
+body {
+    color: $text-color;
+    background-color: $background-color;
 }
 
 
@@ -120,7 +121,7 @@ blockquote {
     margin-top: $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-size: 1rem;
 
     > :last-child {
         margin-bottom: 0;
@@ -134,7 +135,7 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: $monospace-font-size;
     font-family: $monospace-font-family;
     font-weight: $monospace-font-weight;
     border: 1px solid $grey-color-light;
