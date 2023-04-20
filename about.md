@@ -9,7 +9,6 @@ I like tinkering with [Emacs](https://github.com/codingquark/emacs.g), various h
 
 On normal days you may find me tinkering with some theoretical study, machine learning, electronics projects, programming projects and mostly just fixing things here and there. Professionally, I run a business.
 
-<br />
 You can find me on
 
 - mastodon: [https://mathstodon.xyz/@codingquark](https://mathstodon.xyz/@codingquark)
