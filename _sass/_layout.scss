@@ -118,6 +118,15 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+
+    img {
+	display: inline-block;
+	position: relative;
+	max-width:15px;
+	max-height:15px;
+	width: auto;
+	height: auto;
+    }
 }
 
 .footer-heading {
@@ -235,6 +244,7 @@
     font-feature-settings: 'smcp' 1;
     font-weight: 500;
     line-height: 1;
+    margin-bottom: 10px;
 }
 
 .post-content {
