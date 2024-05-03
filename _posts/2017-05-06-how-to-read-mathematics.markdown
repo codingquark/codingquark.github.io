@@ -7,7 +7,7 @@ comments: true
 ---
 
 # Link to the article:
-[How to read mathematics](http://web.stonehill.edu/compsci/History_Math/math-read.htm)
+[How to read mathematics](https://www.researchgate.net/publication/379893603_How_to_Read_Mathematics)
 
 When I started reading Concrete Mathematics, I was taken aback. After reading the first chapter, I felt it is good, I already know Tower of Hanoi and induction let's just move on to exercises right after the first read. Guess what happened? I couldn't do any exercises (could do first few).
 
