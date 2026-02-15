@@ -3,4 +3,4 @@ gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-feed'
 gem 'minitest'
 
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
