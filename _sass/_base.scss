@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit / 2;
 }
 
 
@@ -140,7 +140,6 @@ code {
     font-family: $monospace-font-family;
     font-weight: $monospace-font-weight;
     border: 1px solid $grey-color-light;
-    border-radius: 5px;
 }
 
 code {

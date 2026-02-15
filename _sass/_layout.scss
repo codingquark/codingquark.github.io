@@ -2,21 +2,20 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-    background: #f0f0f0;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-family: "Indie Flower";
-    font-size: 1.6rem;
+    font-family: 'EB Garamond';
+    font-size: 1.4rem;
     font-weight: 400;
+    font-feature-settings: 'smcp' 1;
     line-height: 56px;
-    letter-spacing: -1px;
+    letter-spacing: 0.5px;
     margin-bottom: 0;
     float: left;
 
@@ -31,9 +30,10 @@
 
     > svg {
         display: inline-block;
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
         vertical-align: middle;
+        margin-right: 6px;
 
         path {
             fill: $text-color;
@@ -66,7 +66,6 @@
         right: $spacing-unit / 2;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
-        border-radius: 5px;
         text-align: right;
 
         .menu-icon {
@@ -208,10 +207,10 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit - 20;
+        margin-bottom: $spacing-unit / 2;
 
 	> h2 {
-	    margin-bottom: $spacing-unit - 10;
+	    margin-bottom: 0;
 	}
     }
 }
@@ -243,27 +242,27 @@
     font-size: 1.7rem;
     font-feature-settings: 'smcp' 1;
     font-weight: 500;
-    line-height: 1;
-    margin-bottom: 10px;
+    line-height: 1.3;
+    margin-bottom: $spacing-unit / 3;
 }
 
 .post-content {
-    margin-bottom: $spacing-unit - $spacing-unit;
+    margin-bottom: 0;
 
     h1 {
 	font-family: 'EB Garamond';
         font-size: 1.6rem;
 	font-weight: $post-content-header-weight;
 	font-feature-settings: 'smcp' 1;
-	margin-top: $spacing-unit - 10;
-	margin-bottom: $spacing-unit - $spacing-unit;
+	margin-top: $spacing-unit;
+	margin-bottom: $spacing-unit / 3;
     }
     h1:after {
 	content:' ';
 	display:block;
 	width: 80px;
 	border:2px solid $grey-color-light;
-	margin-bottom: $spacing-unit - 15;
+	margin-top: $spacing-unit / 4;
     }
 
     h2 {
@@ -271,8 +270,8 @@
         font-size: 1.3rem;
 	font-weight: $post-content-header-weight;
 	font-feature-settings: 'smcp' 1;
-	margin-top: $spacing-unit - 15;
-	margin-bottom: $spacing-unit - 20;
+	margin-top: $spacing-unit;
+	margin-bottom: $spacing-unit / 3;
     }
 
     h3 {
@@ -280,7 +279,7 @@
         font-size: 1rem;
 	font-weight: $post-content-header-weight;
 	font-feature-settings: 'smcp' 1;
-	margin-top: $spacing-unit - 15;
-	margin-bottom: $spacing-unit - $spacing-unit;
+	margin-top: $spacing-unit * 2/3;
+	margin-bottom: $spacing-unit / 4;
     }
 }
