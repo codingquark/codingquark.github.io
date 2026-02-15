@@ -4,19 +4,16 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'Hahmlet';
-    font-style: normal;
-    src: url('../assets/fonts/Hahmlet/Hahmlet-VariableFont_wght.ttf');
-}
-@font-face {
     font-family: 'EB Garamond';
     font-style: normal;
-    src: url('../assets/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf');
+    font-display: swap;
+    src: url('../assets/fonts/EB_Garamond/EBGaramond-VariableFont_wght.woff2') format('woff2');
 }
 @font-face {
     font-family: 'EB Garamond';
     font-style: italic;
-    src: url('../assets/fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf');
+    font-display: swap;
+    src: url('../assets/fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.woff2') format('woff2');
 }
 
 @font-face {
@@ -24,6 +21,7 @@
     font-style: normal;
     font-weight: normal;
     font-stretch: normal;
+    font-display: swap;
     src: url('../assets/fonts/Charter/charter_regular.woff2') format('woff2');
 }
 
@@ -32,6 +30,7 @@
     font-style: italic;
     font-weight: normal;
     font-stretch: normal;
+    font-display: swap;
     src: url('../assets/fonts/Charter/charter_italic.woff2') format('woff2');
 }
 
@@ -40,6 +39,7 @@
     font-style: normal;
     font-weight: bold;
     font-stretch: normal;
+    font-display: swap;
     src: url('../assets/fonts/Charter/charter_bold.woff2') format('woff2');
 }
 
@@ -48,25 +48,25 @@
     font-style: italic;
     font-weight: bold;
     font-stretch: normal;
+    font-display: swap;
     src: url('../assets/fonts/Charter/charter_bold_italic.woff2') format('woff2');
 }
 
-
-/* indie-flower-regular - latin */
 @font-face {
-  font-family: 'Indie Flower';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/indie-flower-v12-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../assets/fonts/indie-flower-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/indie-flower-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/indie-flower-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/indie-flower-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/indie-flower-v12-latin-regular.svg#IndieFlower') format('svg'); /* Legacy iOS */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../assets/fonts/IBM_Plex_Mono/ibm-plex-mono-regular.woff2') format('woff2');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap');
+@font-face {
+    font-family: 'IBM Plex Mono';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../assets/fonts/IBM_Plex_Mono/ibm-plex-mono-italic.woff2') format('woff2');
+}
 
 // Our variables
 $base-font-family: 'Charter', serif;
@@ -75,7 +75,7 @@ $base-font-weight: 400;
 $small-font-size:  0.875rem;
 $base-line-height: 1.6;
 
-$monospace-font-family: 'IBM Plex Mono';
+$monospace-font-family: 'IBM Plex Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace;
 $monospace-font-weight: 400;
 $monospace-font-size: 0.75rem;
 
